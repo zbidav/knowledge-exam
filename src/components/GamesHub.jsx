@@ -5,6 +5,7 @@ import MatchGame from './MatchGame.jsx'
 import OrderGame from './OrderGame.jsx'
 import AminoAcidAbbrevGame from './AminoAcidAbbrevGame.jsx'
 import AminoAcidChargeLab from './AminoAcidChargeLab.jsx'
+import MembranePotentialLab from './MembranePotentialLab.jsx'
 
 // Built-in (code-driven) games — richer than the XML match/order decks. Each
 // declares its subject so it groups with the rest. `Component` takes { onExit }.
@@ -24,6 +25,14 @@ const BUILTIN_GAMES = [
     sub: 'הדגמה חיה: מטען חומצות אמינו לפי pH',
     icon: '⚗️',
     Component: AminoAcidChargeLab,
+  },
+  {
+    id: 'builtin-membrane-potential',
+    subject: 'physiology',
+    title: 'מעבדת פוטנציאל ממברנה',
+    sub: 'Nernst לכל יון + פוטנציאל מנוחה (Goldman) חי',
+    icon: '⚡',
+    Component: MembranePotentialLab,
   },
 ]
 
