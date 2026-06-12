@@ -242,6 +242,34 @@ body {
 .order-step.step-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
 .order-step.step-wrong .step-verdict { color: var(--wrong); }
 
+/* order layouts: column (default), horizontal row, circular ring */
+.placed-col { display: flex; flex-direction: column; }
+.placed-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.placed-row .order-step { margin-bottom: 0; width: auto; }
+.answer-horizontal .order-empty { margin-bottom: 0; }
+
+.order-circle {
+  position: relative; width: 100%; max-width: 380px; aspect-ratio: 1 / 1;
+  margin: 10px auto 22px;
+}
+.circle-center {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  color: var(--muted); font-weight: 600; text-align: center; max-width: 130px;
+  font-size: 0.9rem;
+}
+.circle-node {
+  position: absolute; transform: translate(-50%, -50%);
+  width: 96px; min-height: 52px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  border: 1.5px solid var(--line); border-radius: 10px; background: var(--card);
+  color: var(--ink); cursor: pointer; padding: 6px 4px; text-align: center;
+}
+.circle-node.circle-empty { border-style: dashed; color: var(--muted); cursor: default; }
+.circle-num { font-weight: 700; color: var(--accent); font-size: 0.7rem; }
+.circle-text { font-size: 0.72rem; line-height: 1.15; }
+.circle-node.step-correct { border-color: var(--correct); background: var(--correct-bg); }
+.circle-node.step-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+
 /* ---- random-quiz call-to-action ------------------------------------------*/
 .quiz-cta {
   display: flex;

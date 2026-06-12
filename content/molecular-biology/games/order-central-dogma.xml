@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ORDER game: central dogma / eukaryotic gene expression flow, correct order. -->
-<orderset subject="molecular-biology" topic="הדוגמה המרכזית" title="זרימת המידע הגנטי (Central Dogma)" prompt="סדר/י את שלבי ביטוי הגן באאוקריוטים">
+<orderset subject="molecular-biology" topic="הדוגמה המרכזית" title="זרימת המידע הגנטי (Central Dogma)" layout="horizontal" prompt="סדר/י את שלבי ביטוי הגן באאוקריוטים">
   <step>DNA — הגן בגרעין</step>
   <step>שעתוק (transcription) ל-pre-mRNA</step>
   <step>עיבוד RNA — שחבור (splicing), הוספת 5' Cap ו-Poly-A</step>

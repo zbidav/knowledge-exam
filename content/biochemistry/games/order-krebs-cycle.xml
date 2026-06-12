@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORDER game, CIRCULAR layout (for a cycle). Steps are authored starting from
+     the conventional first intermediate (Citrate); the ring is the visual.
+     Keep labels short so they fit the circle nodes. -->
+<orderset subject="biochemistry" topic="מעגל קרבס" title="מעגל קרבס (Citric Acid Cycle)" layout="circular"
+          prompt="סדר/י את הביניימים של מעגל קרבס לאורך המעגל (התחל/י מ-Citrate)">
+  <step>ציטרט (Citrate)</step>
+  <step>איזוציטרט (Isocitrate)</step>
+  <step>α-קטוגלוטרט (α-Ketoglutarate)</step>
+  <step>סוקציניל-CoA (Succinyl-CoA)</step>
+  <step>סוקצינט (Succinate)</step>
+  <step>פומרט (Fumarate)</step>
+  <step>מאלט (Malate)</step>
+  <step>אוקסלואצטט (Oxaloacetate)</step>
+</orderset>

@@ -63,6 +63,10 @@ export function parseGame(xmlString, filePath = '') {
       topic: attr(orderEl, 'topic'),
       title: attr(orderEl, 'title') || attr(orderEl, 'topic'),
       prompt: attr(orderEl, 'prompt'),
+      // layout: 'vertical' (default) | 'horizontal' | 'circular' (for cycles).
+      // In all layouts the correct order is document order; for a cycle, author
+      // the steps starting from a conventional first node — the circle is visual.
+      layout: attr(orderEl, 'layout') || 'vertical',
       steps, // correct order = document order
     }
   }
