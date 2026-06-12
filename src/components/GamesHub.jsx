@@ -6,6 +6,7 @@ import OrderGame from './OrderGame.jsx'
 import AminoAcidAbbrevGame from './AminoAcidAbbrevGame.jsx'
 import AminoAcidChargeLab from './AminoAcidChargeLab.jsx'
 import MembranePotentialLab from './MembranePotentialLab.jsx'
+import OsmosisLab from './OsmosisLab.jsx'
 
 // Built-in (code-driven) games — richer than the XML match/order decks. Each
 // declares its subject so it groups with the rest. `Component` takes { onExit }.
@@ -33,6 +34,14 @@ const BUILTIN_GAMES = [
     sub: 'Nernst לכל יון + פוטנציאל מנוחה (Goldman) חי',
     icon: '⚡',
     Component: MembranePotentialLab,
+  },
+  {
+    id: 'builtin-osmosis',
+    subject: 'physiology',
+    title: 'מעבדת אוסמוזה',
+    sub: 'חומר חדיר מול לא-חדיר — מתי מים זזים',
+    icon: '💧',
+    Component: OsmosisLab,
   },
 ]
 

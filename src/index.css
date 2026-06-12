@@ -226,6 +226,37 @@ body {
   .ion-row { grid-template-columns: 1fr; gap: 6px; }
 }
 
+/* ---- osmosis lab ----------------------------------------------------------*/
+.osmo-tank { display: flex; align-items: stretch; gap: 0; margin-bottom: 14px; }
+.osmo-comp { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.osmo-beaker {
+  position: relative; height: 220px; border: 2px solid var(--line);
+  border-radius: 8px; background: var(--surface-2); overflow: hidden;
+  display: flex; align-items: flex-end;
+}
+.osmo-water {
+  width: 100%; background: rgba(59,130,246,0.28); border-top: 2px solid rgba(59,130,246,0.6);
+  transition: height 0.6s ease; display: flex; align-items: flex-end;
+}
+.osmo-dots { display: flex; flex-wrap: wrap; gap: 5px; padding: 8px; align-content: flex-end; }
+.osmo-membrane {
+  flex: 0 0 26px; position: relative; display: flex; align-items: center; justify-content: center;
+  border-inline: 2px dashed var(--accent);
+}
+.osmo-membrane span {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-size: 0.7rem; color: var(--accent); white-space: nowrap;
+}
+.osmo-stats { display: flex; flex-direction: column; gap: 2px; align-items: center; font-size: 0.85rem; color: var(--muted); }
+.osmo-stats strong { color: var(--ink); }
+.osmo-note { background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; }
+.osmo-controls { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 16px; }
+.osmo-ctrl-group { display: flex; flex-direction: column; gap: 8px; }
+.osmo-ctrl-label { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; font-weight: 600; }
+.dot-imp { background: #2563eb; }
+.dot-perm { background: #16a085; }
+.osmo-dots .dot { width: 9px; height: 9px; border-radius: 50%; }
+
 /* ---- game shell -----------------------------------------------------------*/
 .game-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; }
 .game-head h2 { margin: 0; font-size: 1.25rem; }
