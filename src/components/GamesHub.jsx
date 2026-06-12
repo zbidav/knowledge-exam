@@ -7,6 +7,7 @@ import AminoAcidAbbrevGame from './AminoAcidAbbrevGame.jsx'
 import AminoAcidChargeLab from './AminoAcidChargeLab.jsx'
 import MembranePotentialLab from './MembranePotentialLab.jsx'
 import OsmosisLab from './OsmosisLab.jsx'
+import TitrationLab from './TitrationLab.jsx'
 
 // Built-in (code-driven) games — richer than the XML match/order decks. Each
 // declares its subject so it groups with the rest. `Component` takes { onExit }.
@@ -26,6 +27,14 @@ const BUILTIN_GAMES = [
     sub: 'הדגמה חיה: מטען חומצות אמינו לפי pH',
     icon: '⚗️',
     Component: AminoAcidChargeLab,
+  },
+  {
+    id: 'builtin-titration',
+    subject: 'biochemistry',
+    title: 'מעבדת טיטרציה ובופרים',
+    sub: 'עקומות טיטרציה, אזורי בופר ו-pH פיזיולוגי',
+    icon: '📈',
+    Component: TitrationLab,
   },
   {
     id: 'builtin-membrane-potential',

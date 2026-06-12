@@ -253,6 +253,27 @@ body {
 .ion-out { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
 .ion-drive { font-size: 0.85rem; color: var(--muted); }
 
+/* ---- titration lab --------------------------------------------------------*/
+.buf-chips { margin-bottom: 14px; }
+.titration-plot { width: 100%; max-width: 360px; height: auto; display: block; margin: 0 auto 12px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+.tit-axis { stroke: var(--muted); stroke-width: 1; }
+.tit-tick { fill: var(--muted); font-size: 10px; }
+.tit-curve { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+.tit-buffer-zone { fill: rgba(74,222,128,0.13); }
+.tit-phys { stroke: var(--wrong); stroke-width: 1; stroke-dasharray: 4 3; }
+.tit-phys-label { fill: var(--wrong); font-size: 10px; }
+.tit-pka { fill: var(--muted); font-size: 9px; }
+.tit-point { fill: var(--accent); stroke: var(--card); stroke-width: 2; }
+.tit-axislabel { fill: var(--muted); font-size: 10px; }
+.tit-readout { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.tit-readout .readout-card { flex: 0 0 110px; }
+.tit-status { flex: 1; font-size: 0.9rem; }
+.tit-slider { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+.tit-slider input[type="range"] { width: 100%; accent-color: var(--accent); }
+.tit-note { font-size: 0.88rem; color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.net-zero { border-color: var(--correct) !important; }
+.net-zero .readout-value { color: var(--correct); }
+
 /* ---- osmosis lab ----------------------------------------------------------*/
 .osmo-tank { display: flex; align-items: stretch; gap: 0; margin-bottom: 14px; }
 .osmo-comp { flex: 1; display: flex; flex-direction: column; gap: 8px; }
