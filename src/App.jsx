@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { SUBJECTS, subjectByKey } from './data/subjects.js'
 import { decksForSubject, questionsForSubject, ALL_QUESTIONS } from './lib/loadDecks.js'
-import { ALL_GAMES } from './lib/loadGames.js'
 import Practice from './components/Practice.jsx'
 import QuizSetup from './components/QuizSetup.jsx'
 import GamesHub from './components/GamesHub.jsx'
@@ -126,7 +125,7 @@ function SubjectGrid({ onPick, onQuiz, onGames }) {
         <button className="games-cta" onClick={onGames}>
           <span className="quiz-cta-title">🧩 משחקים</span>
           <span className="quiz-cta-sub">
-            {ALL_GAMES.length} משחקי התאמה וסידור · למידה אינטראקטיבית
+            התאמה, סידור, קודים ומעבדת pH · למידה אינטראקטיבית
           </span>
         </button>
       </div>

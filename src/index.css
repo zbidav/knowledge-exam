@@ -127,6 +127,65 @@ body {
 .game-title { font-weight: 600; }
 .game-sub { font-size: 0.85rem; color: var(--muted); }
 
+/* ---- games grouped by subject ---------------------------------------------*/
+.game-group { margin-bottom: 22px; }
+.game-group-title { font-size: 1.1rem; margin: 0 0 10px; }
+
+/* ---- abbreviation game ----------------------------------------------------*/
+.aa-len-row { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+.aa-word { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.aa-letter-box {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  border: 1.5px solid var(--line); border-radius: 12px; padding: 14px 12px;
+  background: var(--card); min-width: 120px;
+}
+.aa-big { font-size: 2.2rem; font-weight: 800; line-height: 1; direction: ltr; }
+.aa-reveal { font-size: 0.8rem; color: var(--muted); }
+.aa-select {
+  font: inherit; padding: 6px 8px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  max-width: 130px;
+}
+.aa-letter-box.aa-correct { border-color: var(--correct); background: var(--correct-bg); }
+.aa-letter-box.aa-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+
+/* ---- pH / charge lab ------------------------------------------------------*/
+.ph-control { margin-bottom: 20px; }
+.ph-readout { font-size: 1.1rem; margin-bottom: 6px; }
+.ph-slider { width: 100%; direction: ltr; accent-color: var(--accent); }
+.ph-scale { display: flex; justify-content: space-between; color: var(--muted); font-size: 0.8rem; }
+.charge-readouts { display: flex; gap: 14px; margin-bottom: 8px; }
+.readout-card {
+  flex: 1; display: flex; flex-direction: column; gap: 4px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px;
+}
+.readout-label { font-size: 0.85rem; color: var(--muted); }
+.readout-value { font-size: 1.8rem; font-weight: 800; direction: ltr; }
+.readout-card.net-pos { border-color: #3b82f6; }
+.readout-card.net-pos .readout-value { color: #3b82f6; }
+.readout-card.net-neg { border-color: var(--wrong); }
+.readout-card.net-neg .readout-value { color: var(--wrong); }
+.pi-note { background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin-bottom: 14px; font-size: 0.9rem; }
+.chain-zone, .palette-zone { margin-bottom: 18px; }
+.aa-tile-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.aa-tile-row.palette .aa-tile { cursor: pointer; }
+.aa-tile {
+  position: relative; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 0; width: 56px; height: 60px;
+  border: 1.5px solid var(--line); border-radius: 10px; cursor: pointer;
+  color: var(--ink);
+}
+.aa-tile-three { font-size: 0.65rem; color: var(--muted); direction: ltr; }
+.aa-tile-one { font-size: 1.5rem; font-weight: 800; line-height: 1; direction: ltr; }
+.aa-tile-charge { position: absolute; top: 2px; inset-inline-end: 5px; font-size: 0.75rem; font-weight: 700; }
+.aa-tile-removable:hover { outline: 2px solid var(--wrong); }
+.charge-legend { display: flex; gap: 16px; color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
+.charge-legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-inline-end: 4px; vertical-align: middle; }
+.dot-pos { background: #3b82f6; }
+.dot-neg { background: #dc2626; }
+.dot-zero { background: var(--muted); }
+
 /* ---- game shell -----------------------------------------------------------*/
 .game-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; }
 .game-head h2 { margin: 0; font-size: 1.25rem; }
