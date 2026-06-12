@@ -304,6 +304,13 @@ body {
 .dot-imp { background: #2563eb; }
 .dot-perm { background: #16a085; }
 .osmo-dots .dot { width: 9px; height: 9px; border-radius: 50%; }
+.osmo-ledger { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 16px; }
+.ledger-row { display: grid; grid-template-columns: 1fr 80px 80px; padding: 8px 12px; font-size: 0.88rem; border-top: 1px solid var(--line); }
+.ledger-row:first-child { border-top: none; }
+.ledger-row span:nth-child(2), .ledger-row span:nth-child(3) { text-align: center; direction: ltr; }
+.ledger-head { color: var(--muted); font-weight: 600; background: var(--surface-2); }
+.ledger-strong { font-weight: 700; background: var(--surface-2); }
+.osmo-hint { font-size: 0.88rem; color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; margin-top: 4px; }
 
 /* ---- game shell -----------------------------------------------------------*/
 .game-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; }
