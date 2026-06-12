@@ -23,6 +23,9 @@ const rawFiles = import.meta.glob('/content/**/*.xml', {
 function buildDecks() {
   const decks = []
   for (const [path, raw] of Object.entries(rawFiles)) {
+    // Game files live under content/<subject>/games/ and have a different root
+    // (<matchset>/<orderset>) — they're handled by loadGames.js, skip them here.
+    if (path.includes('/games/')) continue
     try {
       const deck = parseQuestionSet(raw, path)
       // Fall back to the folder name if the XML omits the subject attribute.

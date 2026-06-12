@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MATCH game: amino acid -> its distinctive property (ties to the
+     amino-acids question deck). Add img="" with a side-chain image if desired. -->
+<matchset subject="biochemistry" topic="חומצות אמינו" title="התאמת חומצות אמינו לתכונה" leftLabel="חומצת אמינו" rightLabel="תכונה ייחודית">
+  <pair left="גליצין (Glycine)"      right="היחידה שאינה כירלית (שרשרת צד = H)" img=""/>
+  <pair left="ציסטאין (Cysteine)"    right="יוצרת קשר דו-גופרתי דרך קבוצת תיול (-SH)" img=""/>
+  <pair left="פרולין (Proline)"      right="שוברת סליל α — חומצת אימינו עם טבעת קשיחה" img=""/>
+  <pair left="ליזין (Lysine)"        right="שרשרת צד טעונה חיובית ב-pH פיזיולוגי" img=""/>
+  <pair left="אספרטט (Aspartate)"    right="שרשרת צד טעונה שלילית (קרבוקסיל)" img=""/>
+  <pair left="טריפטופן (Tryptophan)" right="סופגת אור UV ב-280 ננומטר (טבעת ארומטית)" img=""/>
+</matchset>

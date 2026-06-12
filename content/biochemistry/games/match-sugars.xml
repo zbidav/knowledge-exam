@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  MATCH game. Pair each sugar with its class/description.
+  To use STRUCTURE IMAGES instead of names: drop PNGs in public/ (e.g.
+  public/sugars/glucose.png) and add img="sugars/glucose.png" to the <pair>.
+  The left card then shows the image and the `left` text becomes its caption.
+-->
+<matchset subject="biochemistry" topic="סוכרים" title="התאמת סוכרים" leftLabel="מולקולה" rightLabel="סוג / מאפיין">
+  <pair left="גלוקוז (Glucose)"   right="אלדוהקסוז — חד-סוכר בן 6 פחמנים עם קבוצת אלדהיד" img=""/>
+  <pair left="פרוקטוז (Fructose)" right="קטוהקסוז — חד-סוכר בן 6 פחמנים עם קבוצת קטון" img=""/>
+  <pair left="ריבוז (Ribose)"     right="פנטוז — חד-סוכר בן 5 פחמנים (מרכיב ב-RNA)" img=""/>
+  <pair left="סוכרוז (Sucrose)"   right="דו-סוכר: גלוקוז + פרוקטוז" img=""/>
+  <pair left="לקטוז (Lactose)"    right="דו-סוכר: גלוקוז + גלקטוז" img=""/>
+  <pair left="גליקוגן (Glycogen)" right="רב-סוכר — מאגר גלוקוז מסועף בבעלי חיים" img=""/>
+</matchset>

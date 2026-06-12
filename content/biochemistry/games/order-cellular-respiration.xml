@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORDER game: the steps below are in the CORRECT order (document order).
+     The game shuffles them and the player rebuilds the sequence. -->
+<orderset subject="biochemistry" topic="נשימה תאית" title="שלבי הנשימה התאית" prompt="סדר/י את שלבי הנשימה התאית מהראשון לאחרון">
+  <step>גליקוליזה — פירוק גלוקוז לפירובאט בציטוזול</step>
+  <step>דקרבוקסילציה חמצונית — פירובאט הופך לאצטיל-CoA</step>
+  <step>מעגל קרבס (citric acid cycle) במטריקס המיטוכונדריה</step>
+  <step>שרשרת הובלת האלקטרונים — העברת אלקטרונים ושאיבת פרוטונים</step>
+  <step>כימיאוסמוזה — ATP סינתאז מייצר ATP מהמפל הפרוטוני</step>
+</orderset>

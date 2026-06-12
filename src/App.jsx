@@ -1,8 +1,26 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { SUBJECTS, subjectByKey } from './data/subjects.js'
 import { decksForSubject, questionsForSubject, ALL_QUESTIONS } from './lib/loadDecks.js'
+import { ALL_GAMES } from './lib/loadGames.js'
 import Practice from './components/Practice.jsx'
 import QuizSetup from './components/QuizSetup.jsx'
+import GamesHub from './components/GamesHub.jsx'
+
+// Theme (light/dark). We read a saved choice from localStorage, falling back to
+// the OS preference. The choice is applied by setting data-theme on <html>, which
+// CSS targets — see index.css. Returns [theme, toggle].
+function useTheme() {
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('knowledge-exam:theme')
+    if (saved) return saved
+    return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  })
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('knowledge-exam:theme', theme)
+  }, [theme])
+  return [theme, () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))]
+}
 
 // The whole app is a tiny state machine with three screens. We keep navigation
 // in React state (not a URL router) so the static build works on GitHub Pages
@@ -17,6 +35,7 @@ import QuizSetup from './components/QuizSetup.jsx'
 export default function App() {
   const [view, setView] = useState('home')
   const [subjectKey, setSubjectKey] = useState(null)
+  const [theme, toggleTheme] = useTheme()
   // The set of questions handed to the runner (a topic, a whole subject, or a
   // random quiz). isQuiz toggles the score screen at the end.
   const [session, setSession] = useState({ title: '', questions: [], isQuiz: false })
@@ -44,20 +63,35 @@ export default function App() {
         <button className="brand" onClick={() => setView('home')}>
           תרגול מבחן הידע
         </button>
-        {view !== 'home' && (
-          <button className="link" onClick={() => setView('home')}>
-            ← חזרה לנושאים
+        <div className="topbar-right">
+          {view !== 'home' && (
+            <button className="link" onClick={() => setView('home')}>
+              ← חזרה לתפריט
+            </button>
+          )}
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            title={theme === 'dark' ? 'מצב יום' : 'מצב לילה'}
+            aria-label="החלף ערכת צבעים"
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
           </button>
-        )}
+        </div>
       </header>
 
       <main>
         {view === 'home' && (
-          <SubjectGrid onPick={openSubject} onQuiz={() => setView('quiz-setup')} />
+          <SubjectGrid
+            onPick={openSubject}
+            onQuiz={() => setView('quiz-setup')}
+            onGames={() => setView('games')}
+          />
         )}
         {view === 'quiz-setup' && (
           <QuizSetup onStart={startQuiz} onBack={() => setView('home')} />
         )}
+        {view === 'games' && <GamesHub onBack={() => setView('home')} />}
         {view === 'topics' && (
           <TopicList
             subjectKey={subjectKey}
@@ -78,16 +112,24 @@ export default function App() {
   )
 }
 
-// ---- Screen 1: the four subjects + the random-quiz entry -------------------
-function SubjectGrid({ onPick, onQuiz }) {
+// ---- Screen 1: the four subjects + the random-quiz & games entries ---------
+function SubjectGrid({ onPick, onQuiz, onGames }) {
   return (
     <section className="subject-grid">
-      <button className="quiz-cta" onClick={onQuiz}>
-        <span className="quiz-cta-title">🎯 מבחן אקראי</span>
-        <span className="quiz-cta-sub">
-          {ALL_QUESTIONS.length} שאלות במאגר · בחר/י כמה לתרגל וקבל/י ציון
-        </span>
-      </button>
+      <div className="cta-row">
+        <button className="quiz-cta" onClick={onQuiz}>
+          <span className="quiz-cta-title">🎯 מבחן אקראי</span>
+          <span className="quiz-cta-sub">
+            {ALL_QUESTIONS.length} שאלות במאגר · בחר/י כמה לתרגל וקבל/י ציון
+          </span>
+        </button>
+        <button className="games-cta" onClick={onGames}>
+          <span className="quiz-cta-title">🧩 משחקים</span>
+          <span className="quiz-cta-sub">
+            {ALL_GAMES.length} משחקי התאמה וסידור · למידה אינטראקטיבית
+          </span>
+        </button>
+      </div>
 
       <h1>או תרגול לפי מקצוע</h1>
       <div className="cards">
