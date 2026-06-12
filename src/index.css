@@ -42,6 +42,12 @@ body, .app, .topbar { transition: background-color 0.2s ease, color 0.2s ease; }
 
 * { box-sizing: border-box; }
 
+/* Native <button> does NOT inherit text color/font — it defaults to the UA's
+   black. Most of our surfaces (options, chips, cards, game tiles) are buttons,
+   so without this they stay black-texted in dark mode. Buttons that need white
+   text on a colored fill set `color: #fff` explicitly and still override this. */
+button { color: inherit; font-family: inherit; }
+
 body {
   margin: 0;
   background: var(--bg);
