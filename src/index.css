@@ -226,6 +226,33 @@ body {
   .ion-row { grid-template-columns: 1fr; gap: 6px; }
 }
 
+/* membrane lab v2: cell diagram + two-slider rows */
+.mp-top { display: grid; grid-template-columns: 300px 1fr; gap: 18px; align-items: start; margin-bottom: 16px; }
+@media (max-width: 680px) { .mp-top { grid-template-columns: 1fr; } }
+.cell-diagram { width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto; }
+.cd-cell { fill: rgba(79,140,247,0.10); stroke: var(--accent); stroke-width: 2; }
+.cd-label, .cd-inside { fill: var(--muted); font-size: 13px; }
+.cd-ion { font-size: 14px; font-weight: 700; }
+.mp-top-right { display: flex; flex-direction: column; gap: 12px; }
+.vm-thresh { font-size: 0.82rem; color: var(--muted); margin-top: 4px; }
+.vm-thresh.over { color: var(--wrong); font-weight: 700; }
+.thr-tick { width: 2px; height: 30px; background: var(--muted); border-inline: 1px dashed var(--muted); }
+.thr-tag { color: var(--muted); }
+
+.ion-row2 {
+  background: var(--card); border: 1px solid var(--line); border-inline-start-width: 4px;
+  border-radius: 10px; padding: 12px 14px;
+}
+.ion-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.ion-reset { background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 0.8rem; }
+.ion-reset:hover { border-color: var(--accent); }
+.ion-sliders { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 560px) { .ion-sliders { grid-template-columns: 1fr; } }
+.ion-slider { display: flex; flex-direction: column; gap: 2px; font-size: 0.88rem; }
+.ion-slider input[type="range"] { width: 100%; margin-top: 4px; }
+.ion-out { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+.ion-drive { font-size: 0.85rem; color: var(--muted); }
+
 /* ---- osmosis lab ----------------------------------------------------------*/
 .osmo-tank { display: flex; align-items: stretch; gap: 0; margin-bottom: 14px; }
 .osmo-comp { flex: 1; display: flex; flex-direction: column; gap: 8px; }
