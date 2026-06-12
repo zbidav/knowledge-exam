@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Physiology STARTER deck (type="generated", from Berne & Levy core topics).
+  The 2023A recall did not contain a physiology block, so this seeds the subject
+  with foundational, verified questions. Replace/augment with recall questions as
+  physiology-bearing past exams are transcribed.
+-->
+<questionset subject="physiology" topic="מושגי יסוד" textbook="Berne &amp; Levy" chapter="">
+
+  <question id="ph-001" difficulty="basic" type="single-choice">
+    <stem>מהו הגורם העיקרי לפוטנציאל המנוחה השלילי (resting membrane potential) של תא עצב?</stem>
+    <terms>
+      <term he="פוטנציאל מנוחה" en="resting membrane potential"/>
+      <term he="חדירות לאשלגן" en="potassium permeability"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">חדירות גבוהה יחסית של הממברנה ל-K⁺ בהשוואה ל-Na⁺ במנוחה</option>
+      <option id="b" correct="false">חדירות גבוהה יחסית ל-Na⁺ בהשוואה ל-K⁺ במנוחה</option>
+      <option id="c" correct="false">פתיחת תעלות סידן תלויות-מתח</option>
+      <option id="d" correct="false">שוויון בריכוזי כל היונים בשני צידי הממברנה</option>
+    </options>
+    <explanation>
+      <correct>במנוחה הממברנה חדירה הרבה יותר ל-K⁺ (תעלות דליפה של אשלגן), ולכן פוטנציאל המנוחה קרוב לפוטנציאל שיווי המשקל של אשלגן (E_K ≈ -90 mV). משאבת Na⁺/K⁺-ATPase מקיימת את מפל הריכוזים שמאפשר זאת.</correct>
+      <distractor option="b">חדירות גבוהה ל-Na⁺ הייתה מדפולרת את התא (פוטנציאל חיובי), לא שומרת על מנוחה שלילית — זה קורה רק בשיא פוטנציאל הפעולה.</distractor>
+      <distractor option="c">תעלות סידן תלויות-מתח סגורות במנוחה ואינן הגורם לפוטנציאל המנוחה.</distractor>
+      <distractor option="d">קיים מפל ריכוזים משמעותי (Na⁺ גבוה בחוץ, K⁺ גבוה בפנים) — לא שוויון.</distractor>
+    </explanation>
+    <source type="generated" basis="Berne &amp; Levy — membrane potential"/>
+    <tags><tag>neurophysiology</tag><tag>membrane-potential</tag></tags>
+  </question>
+
+  <question id="ph-002" difficulty="intermediate" type="single-choice">
+    <stem>מה אחראי לשלב הדפולריזציה המהיר (העלייה) בפוטנציאל הפעולה של נוירון?</stem>
+    <terms>
+      <term he="פוטנציאל פעולה" en="action potential"/>
+      <term he="תעלות נתרן תלויות-מתח" en="voltage-gated Na⁺ channels"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">יציאת K⁺ דרך תעלות אשלגן</option>
+      <option id="b" correct="true">כניסת Na⁺ דרך תעלות נתרן תלויות-מתח</option>
+      <option id="c" correct="false">כניסת Cl⁻ דרך תעלות כלור</option>
+      <option id="d" correct="false">פעילות משאבת Na⁺/K⁺-ATPase</option>
+    </options>
+    <explanation>
+      <correct>בהגעה לסף נפתחות תעלות Na⁺ תלויות-מתח; Na⁺ זורם פנימה במהירות במורד מפל אלקטרוכימי ויוצר את שלב העלייה החד (depolarization) של פוטנציאל הפעולה.</correct>
+      <distractor option="a">יציאת K⁺ אחראית לשלב הרפולריזציה (הירידה), לא לעלייה.</distractor>
+      <distractor option="c">תעלות כלור אינן הגורם המדפולר בפוטנציאל פעולה נוירוני.</distractor>
+      <distractor option="d">המשאבה משחזרת מפלים לאורך זמן אך איטית מדי ואינה יוצרת את העלייה המהירה.</distractor>
+    </explanation>
+    <source type="generated" basis="Berne &amp; Levy — action potential"/>
+    <tags><tag>neurophysiology</tag><tag>action-potential</tag></tags>
+  </question>
+
+  <question id="ph-003" difficulty="intermediate" type="single-choice">
+    <stem>לפי חוק פרנק-סטרלינג (Frank-Starling) של הלב, מה קורה כאשר עולה הנפח הדיאסטולי הסופי (preload) של החדר?</stem>
+    <terms>
+      <term he="חוק פרנק-סטרלינג" en="Frank-Starling law"/>
+      <term he="נפח פעימה" en="stroke volume"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">נפח הפעימה (stroke volume) עולה, כי מתיחת סיבי השריר מגבירה את כוח ההתכווצות</option>
+      <option id="b" correct="false">נפח הפעימה יורד בגלל עייפות שריר הלב</option>
+      <option id="c" correct="false">קצב הלב עולה אך נפח הפעימה לא משתנה</option>
+      <option id="d" correct="false">ההתכווצות נחלשת כי הסרקומרים נמתחים מעבר לאופטימום</option>
+    </options>
+    <explanation>
+      <correct>עלייה ב-preload מותחת את סיבי שריר הלב ומקרבת את אורך הסרקומר לאופטימום החפיפה אקטין-מיוזין, מה שמגביר את כוח ההתכווצות ואת נפח הפעימה. כך הלב מסגל את תפוקתו להחזר הוורידי.</correct>
+      <distractor option="b">בטווח הפיזיולוגי עלייה ב-preload מגבירה את כוח ההתכווצות, לא מחלישה אותו.</distractor>
+      <distractor option="c">מנגנון פרנק-סטרלינג עוסק בקשר בין מתיחה לנפח פעימה, ואינו תלוי בשינוי קצב הלב.</distractor>
+      <distractor option="d">חלישת התכווצות ממתיחת-יתר היא תופעה פתולוגית קיצונית, לא התגובה הפיזיולוגית הרגילה לעליית preload.</distractor>
+    </explanation>
+    <source type="generated" basis="Berne &amp; Levy — cardiac mechanics"/>
+    <tags><tag>cardiovascular</tag><tag>cardiac-output</tag></tags>
+  </question>
+
+  <question id="ph-004" difficulty="intermediate" type="single-choice">
+    <stem>מה משפיע במישרין על קצב הסינון הגלומרולרי (GFR) בכליה?</stem>
+    <terms>
+      <term he="קצב סינון גלומרולרי" en="glomerular filtration rate (GFR)"/>
+      <term he="לחץ הידרוסטטי" en="hydrostatic pressure"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">הלחץ ההידרוסטטי בנים הגלומרולריים (capillary hydrostatic pressure)</option>
+      <option id="b" correct="false">ריכוז ההמוגלובין בדם</option>
+      <option id="c" correct="false">מספר הריבוזומים בתאי האבוביות</option>
+      <option id="d" correct="false">קצב הנשימה</option>
+    </options>
+    <explanation>
+      <correct>GFR נקבע על ידי לחץ הסינון נטו = הלחץ ההידרוסטטי בנימי הגלומרולוס פחות הלחץ ההידרוסטטי בקופסית באומן ופחות הלחץ האונקוטי בפלזמה. שינוי בקוטר העורקיק המוביל/מוציא משנה את הלחץ ההידרוסטטי ובכך את ה-GFR.</correct>
+      <distractor option="b">ריכוז המוגלובין נוגע להובלת חמצן, לא לקביעת לחץ הסינון הגלומרולרי.</distractor>
+      <distractor option="c">מספר ריבוזומים אינו פרמטר המודינמי הקובע GFR.</distractor>
+      <distractor option="d">קצב הנשימה משפיע על חילוף גזים, לא ישירות על הסינון הגלומרולרי.</distractor>
+    </explanation>
+    <source type="generated" basis="Berne &amp; Levy — renal physiology"/>
+    <tags><tag>renal</tag><tag>filtration</tag></tags>
+  </question>
+
+  <question id="ph-005" difficulty="advanced" type="single-choice">
+    <stem>מה גורם להסטת עקומת קשירת החמצן להמוגלובין ימינה (ירידה בזיקה לחמצן)?</stem>
+    <terms>
+      <term he="עקומת דיסוציאציה של חמצן" en="oxygen dissociation curve"/>
+      <term he="אפקט בוהר" en="Bohr effect"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">עלייה ב-CO₂, ירידה ב-pH (חומציות), עלייה בטמפרטורה ועלייה ב-2,3-BPG</option>
+      <option id="b" correct="false">ירידה ב-CO₂ ועלייה ב-pH</option>
+      <option id="c" correct="false">ירידה בטמפרטורה בלבד</option>
+      <option id="d" correct="false">ירידה ב-2,3-BPG</option>
+    </options>
+    <explanation>
+      <correct>הסטה ימינה משמעה זיקה נמוכה יותר לחמצן ושחרור חמצן מוגבר לרקמות. היא נגרמת מעלייה ב-CO₂, ירידה ב-pH (אפקט בוהר), עליית טמפרטורה ועלייה ב-2,3-BPG — בדיוק התנאים ברקמה פעילה מטבולית.</correct>
+      <distractor option="b">ירידה ב-CO₂ ועלייה ב-pH מסיטות את העקומה שמאלה (זיקה גבוהה יותר), לא ימינה.</distractor>
+      <distractor option="c">ירידה בטמפרטורה מסיטה שמאלה.</distractor>
+      <distractor option="d">ירידה ב-2,3-BPG מסיטה שמאלה (זיקה גבוהה יותר).</distractor>
+    </explanation>
+    <source type="generated" basis="Berne &amp; Levy — respiratory / gas transport"/>
+    <tags><tag>respiratory</tag><tag>oxygen-transport</tag></tags>
+  </question>
+
+  <question id="ph-006" difficulty="basic" type="single-choice">
+    <stem>איזה חלק של מערכת העצבים האוטונומית אחראי לתגובת "הילחם או ברח" (fight or flight)?</stem>
+    <terms>
+      <term he="מערכת סימפתטית" en="sympathetic nervous system"/>
+      <term he="אדרנלין" en="adrenaline / epinephrine"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">המערכת הסימפתטית</option>
+      <option id="b" correct="false">המערכת הפאראסימפתטית</option>
+      <option id="c" correct="false">המערכת הסומטית בלבד</option>
+      <option id="d" correct="false">מערכת העצבים המרכזית בלבד</option>
+    </options>
+    <explanation>
+      <correct>המערכת הסימפתטית מתווכת את תגובת הדחק: עלייה בקצב הלב ובלחץ הדם, הרחבת סמפונות, הרחבת אישונים והפניית דם לשרירים — דרך נוראדרנלין/אדרנלין. הפאראסימפתטית עושה את ההפך ("rest and digest").</correct>
+      <distractor option="b">הפאראסימפתטית אחראית למצב מנוחה ועיכול, לא לתגובת דחק.</distractor>
+      <distractor option="c">המערכת הסומטית שולטת בשריר רצוני, לא בתגובה האוטונומית של דחק.</distractor>
+      <distractor option="d">תגובת הדחק מתווכת בפריפריה דרך הסימפתטית, לא רק במערכת המרכזית.</distractor>
+    </explanation>
+    <source type="generated" basis="Berne &amp; Levy — autonomic nervous system"/>
+    <tags><tag>autonomic</tag><tag>neurophysiology</tag></tags>
+  </question>
+
+</questionset>

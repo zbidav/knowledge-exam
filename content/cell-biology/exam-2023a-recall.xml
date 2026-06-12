@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RECALL deck: cell-biology questions from the מועד א' March 2023 exam
+  (Prev_exams/2023A.pdf, ש.61 ואילך). Answers cross-checked against Alberts.
+  Ambiguous items from the recall doc were omitted.
+-->
+<questionset subject="cell-biology" topic="שחזור מועד א' 2023" textbook="Alberts" chapter="">
+
+  <question id="cb23-001" difficulty="intermediate" type="single-choice">
+    <stem>מה מאפשר בדיקת דגימה בעומק רב יותר תוך שימוש בסמנים פלואורסצנטיים?</stem>
+    <terms>
+      <term he="מיקרוסקופ מולטי-פוטון" en="multiphoton microscope"/>
+      <term he="פלואורסצנציה" en="fluorescence"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">מיקרוסקופ קונפוקלי</option>
+      <option id="b" correct="true">מיקרוסקופ מולטי-פוטון (multiphoton)</option>
+      <option id="c" correct="false">מיקרוסקופ פלואורסצנטי רגיל</option>
+      <option id="d" correct="false">מיקרוסקופ אלקטרוני</option>
+    </options>
+    <explanation>
+      <correct>מיקרוסקופ מולטי-פוטון משתמש באור אינפרא-אדום באנרגיה נמוכה, שחודר עמוק יותר לרקמה ועירור הפלואורופור מתרחש רק בנקודת המוקד. כך ניתן לצלם עמוק בתוך הרקמה (מאות מיקרון) עם פגיעה מופחתת, יותר מקונפוקלי או פלואורסצנטי רגיל.</correct>
+      <distractor option="a">מיקרוסקופ קונפוקלי משפר חתך אופטי אך חודר פחות עמוק ממולטי-פוטון.</distractor>
+      <distractor option="c">פלואורסצנציה רגילה סובלת מאור רקע ומחדירות רדודה.</distractor>
+      <distractor option="d">מיקרוסקופ אלקטרוני אינו משתמש בסמנים פלואורסצנטיים ודורש דגימה מקובעת (לא חיה).</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.61"/>
+    <tags><tag>microscopy</tag><tag>methods</tag></tags>
+  </question>
+
+  <question id="cb23-002" difficulty="advanced" type="single-choice">
+    <stem>כיצד עובדת שיטת FRET (Förster resonance energy transfer)?</stem>
+    <terms>
+      <term he="העברת אנרגיה" en="resonance energy transfer"/>
+      <term he="אורך גל" en="wavelength"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">אקסיטציה של A ופליטה של B באורך גל נמוך יותר</option>
+      <option id="b" correct="true">אקסיטציה של A, והעברת אנרגיה ל-B שפולט באורך גל גבוה יותר</option>
+      <option id="c" correct="false">אקסיטציה של שני הצבענים יחד ופליטה זהה</option>
+      <option id="d" correct="false">אקסיטציה של A ופליטה של B באורך גל קצר יותר</option>
+    </options>
+    <explanation>
+      <correct>ב-FRET מעוררים את הצבען התורם (donor, A). אם הוא קרוב מאוד למקבל (acceptor, B) — מרחק שמעיד על אינטראקציה — האנרגיה עוברת אליו ללא קרינה, ו-B פולט אור באורך גל ארוך יותר (אנרגיה נמוכה יותר). שינוי באות ה-FRET מדווח על קרבה/אינטראקציה בין שתי המולקולות.</correct>
+      <distractor option="a">הפליטה של המקבל היא באורך גל ארוך (גבוה), לא נמוך.</distractor>
+      <distractor option="c">לא מעוררים את שניהם יחד; מעוררים את התורם והאנרגיה עוברת למקבל.</distractor>
+      <distractor option="d">אורך הגל של הפליטה ארוך יותר מהעירור, לא קצר יותר.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.62"/>
+    <tags><tag>microscopy</tag><tag>FRET</tag></tags>
+  </question>
+
+  <question id="cb23-003" difficulty="advanced" type="single-choice">
+    <stem>לחלבון p53 לא תקין יש אלל אחד תקין ואלל שני לא תקין (mutant) שאינו קושר DNA. כיצד תשפיע מוטציה זו על אפופטוזיס?</stem>
+    <terms>
+      <term he="טטרמר" en="tetramer"/>
+      <term he="דומיננטי שלילי" en="dominant negative"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">לא תשפיע, כי האלל התקין מספיק</option>
+      <option id="b" correct="false">לא תשפיע, כי p53 מוטנטי יתפרק מהר</option>
+      <option id="c" correct="true">יעכב אפופטוזיס, כי הטטרמר המעורב לא יוכל להיקשר ל-DNA כראוי</option>
+      <option id="d" correct="false">יגביר אפופטוזיס בגלל יציבות יתר של p53</option>
+    </options>
+    <explanation>
+      <correct>p53 פועל כטטרמר. כאשר חלק מתת-היחידות מוטנטיות ולא קושרות DNA, הטטרמר המעורב מאבד את יכולת הקישור והפעלת הגנים — אפקט דומיננטי-שלילי. התוצאה: ירידה בתפקוד p53 ועיכוב אפופטוזיס, גם בנוכחות אלל תקין אחד.</correct>
+      <distractor option="a">בגלל מבנה הטטרמר, אלל מוטנטי בודד "מרעיל" את הקומפלקס — אלל תקין יחיד לא מספיק.</distractor>
+      <distractor option="b">המוטציה היא באתר קישור ה-DNA, היא אינה גורמת לפירוק מהיר של החלבון.</distractor>
+      <distractor option="d">אובדן קישור ל-DNA מפחית תפקוד p53 ולכן מפחית אפופטוזיס, לא מגביר.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.77 (Alberts — p53)"/>
+    <tags><tag>cancer</tag><tag>apoptosis</tag><tag>p53</tag></tags>
+  </question>
+
+  <question id="cb23-004" difficulty="basic" type="single-choice">
+    <stem>איזה חלבון שכיח ביותר ב-ECM (מטריקס חוץ-תאי) של העורקים?</stem>
+    <terms>
+      <term he="מטריקס חוץ-תאי" en="extracellular matrix (ECM)"/>
+      <term he="אלסטין" en="elastin"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">אלסטין (Elastin)</option>
+      <option id="b" correct="false">פיברונקטין (Fibronectin)</option>
+      <option id="c" correct="false">היאלורונן (Hyaluronan)</option>
+      <option id="d" correct="false">קולגן II (Collagen II)</option>
+    </options>
+    <explanation>
+      <correct>אלסטין הוא חלבון ה-ECM הדומיננטי בעורקים — כ-50% מהמסה היבשה של אבי העורקים. הוא מקנה גמישות שמאפשרת לעורק להתרחב ולהתכווץ עם פעימות הלב.</correct>
+      <distractor option="b">פיברונקטין חשוב להיצמדות תאים אך אינו החלבון השכיח ביותר ב-ECM של העורקים.</distractor>
+      <distractor option="c">היאלורונן הוא גליקוזאמינוגליקן נפוץ ברקמות חיבור אחרות, לא החלבון הדומיננטי בעורקים.</distractor>
+      <distractor option="d">קולגן II אופייני לסחוס; בעורקים הגמישות נשענת בעיקר על אלסטין.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.78 (Alberts עמ' 1065)"/>
+    <tags><tag>ECM</tag><tag>connective-tissue</tag></tags>
+  </question>
+
+  <question id="cb23-005" difficulty="advanced" type="single-choice">
+    <stem>מה יקרה אם תאבד פעילות ה-ATPase של GET3?</stem>
+    <terms>
+      <term he="חלבון מעוגן-זנב" en="tail-anchored protein"/>
+      <term he="מסלול GET" en="GET pathway"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">חלבון מעוגן-זנב לא ישתחרר לממברנת ה-ER</option>
+      <option id="b" correct="false">חלבון מעוגן-זנב לא יעבור להמשך עיבוד</option>
+      <option id="c" correct="false">לא תהיה פעילות של GET2 ו-GET1</option>
+      <option id="d" correct="false">לא תתבצע סינתזה של החלבון כלל</option>
+    </options>
+    <explanation>
+      <correct>GET3 נושא את החלבון המעוגן-זנב (tail-anchored) ומשתמש בהידרוליזת ATP כדי לשחרר אותו אל הקולטן GET1/GET2 ולהחדירו לממברנת ה-ER. ללא פעילות ATPase, GET3 לא ישחרר את המטען — החלבון לא ישתלב בממברנת ה-ER.</correct>
+      <distractor option="b">הבעיה אינה ב"המשך עיבוד" אלא בשלב השחרור וההחדרה לממברנת ה-ER.</distractor>
+      <distractor option="c">GET1/GET2 הם הקולטן בממברנה; אובדן ATPase של GET3 פוגע בשחרור המטען, לא מבטל את קיום GET1/2.</distractor>
+      <distractor option="d">הסינתזה של החלבון בריבוזום עצמאית; הפגיעה היא בהחדרה לממברנה לאחר הסינתזה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.79 (Alberts עמ' 682)"/>
+    <tags><tag>protein-targeting</tag><tag>ER</tag></tags>
+  </question>
+
+  <question id="cb23-006" difficulty="intermediate" type="single-choice">
+    <stem>מהו ההרכב הסטויכיומטרי של תת-היחידות ב-PKA כשהוא לא פעיל (inactive)?</stem>
+    <terms>
+      <term he="פרוטאין קינאז A" en="protein kinase A (PKA)"/>
+      <term he="תת-יחידה רגולטורית" en="regulatory subunit"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">תת-יחידה רגולטורית אחת ושתי תת-יחידות קטליטיות</option>
+      <option id="b" correct="true">שתי תת-יחידות רגולטוריות ושתי תת-יחידות קטליטיות</option>
+      <option id="c" correct="false">תת-יחידה רגולטורית אחת ותת-יחידה קטליטית אחת</option>
+      <option id="d" correct="false">שלוש רגולטוריות ותת-יחידה קטליטית אחת</option>
+    </options>
+    <explanation>
+      <correct>במצב הלא-פעיל PKA הוא הטטרמר R2C2 — שתי תת-יחידות רגולטוריות (R) ושתי קטליטיות (C). קישור cAMP לתת-היחידות הרגולטוריות משחרר את שתי התת-יחידות הקטליטיות הפעילות.</correct>
+      <distractor option="a">היחס הוא 2:2 ולא 1:2.</distractor>
+      <distractor option="c">הקומפלקס הוא טטרמר (2R+2C), לא דימר 1:1.</distractor>
+      <distractor option="d">אין שלוש רגולטוריות — ההרכב הוא R2C2.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.81 (Alberts — PKA)"/>
+    <tags><tag>signaling</tag><tag>cAMP</tag><tag>PKA</tag></tags>
+  </question>
+
+  <question id="cb23-007" difficulty="advanced" type="single-choice">
+    <stem>מה תפקידו של Arf (ARF / p14ARF) בתגובה לעודף מיטוגנים?</stem>
+    <terms>
+      <term he="מיטוגן" en="mitogen"/>
+      <term he="מעכב גידול" en="tumor suppressor"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">בעודף מיטוגנים הוא מפרק ישירות את p53</option>
+      <option id="b" correct="true">בעודף מיטוגנים הוא נקשר ל-MDM2 ומעכב אותו (וכך מייצב את p53)</option>
+      <option id="c" correct="false">בעודף מיטוגנים הוא נקשר ל-MDM2 וגורם לפירוקו של p53</option>
+      <option id="d" correct="false">הוא מפעיל את MDM2 כדי להאיץ את מחזור התא</option>
+    </options>
+    <explanation>
+      <correct>אות מיטוגני חריג (למשל ביטוי-יתר של Myc) משרה Arf. Arf נקשר ל-MDM2 ומעכב אותו; מכיוון ש-MDM2 הוא היוביקוויטין-ליגאז שמפרק את p53, עיכוב MDM2 מייצב את p53 ומפעיל עצירת מחזור תא או אפופטוזיס — הגנה מפני התמרה סרטנית.</correct>
+      <distractor option="a">Arf אינו מפרק p53; להפך, הוא מסייע לייצבו דרך עיכוב MDM2.</distractor>
+      <distractor option="c">עיכוב MDM2 מייצב את p53 ולא גורם לפירוקו.</distractor>
+      <distractor option="d">Arf מעכב את MDM2, לא מפעיל אותו.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.83 (Alberts עמ' 1017)"/>
+    <tags><tag>cell-cycle</tag><tag>tumor-suppressor</tag></tags>
+  </question>
+
+  <question id="cb23-008" difficulty="intermediate" type="single-choice">
+    <stem>מה תפקידו של קומפלקס SCF?</stem>
+    <terms>
+      <term he="יוביקוויטין ליגאז" en="ubiquitin ligase (E3)"/>
+      <term he="פירוק חלבונים" en="protein degradation"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">יוביקוויטין ליגאז (E3) הפועל על חלבוני מטרה מזורחנים</option>
+      <option id="b" correct="false">זרחון חלבון המטרה</option>
+      <option id="c" correct="false">ביצוע פעילות פוספטאז על חלבון המטרה</option>
+      <option id="d" correct="false">הסרת יוביקוויטין מחלבון</option>
+    </options>
+    <explanation>
+      <correct>SCF (Skp1–Cullin–F-box) הוא יוביקוויטין-ליגאז מסוג E3. הוא מזהה חלבוני מטרה (לרוב לאחר שזורחנו) ומסמן אותם ביוביקוויטין לפירוק בפרוטאזום — מנגנון מרכזי בבקרת מחזור התא.</correct>
+      <distractor option="b">SCF אינו קינאז; הוא מסמן ביוביקוויטין מטרות שכבר זורחנו על ידי קינאזות אחרות.</distractor>
+      <distractor option="c">SCF אינו פוספטאז.</distractor>
+      <distractor option="d">SCF מוסיף יוביקוויטין (ligase), לא מסיר אותו (זה תפקיד DUBs).</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.84"/>
+    <tags><tag>protein-degradation</tag><tag>ubiquitin</tag><tag>cell-cycle</tag></tags>
+  </question>
+
+  <question id="cb23-009" difficulty="advanced" type="single-choice">
+    <stem>מה נכון לגבי SREBP ו-SCAP במנגנון בקרת הכולסטרול?</stem>
+    <terms>
+      <term he="חלבון מקשר אלמנט סטרול" en="SREBP"/>
+      <term he="חלבון SCAP" en="SCAP"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">בנוכחות כולסטרול, SCAP קושר את SREBP על ממברנת ה-ER (ולא מאפשר את שחרורו)</option>
+      <option id="b" correct="false">בנוכחות כולסטרול, SCAP קושר את SREBP על ממברנת הגולג'י</option>
+      <option id="c" correct="false">בנוכחות כולסטרול, SCAP מבקע את SREBP</option>
+      <option id="d" correct="false">בהיעדר כולסטרול, SCAP מעביר את SREBP מהגולג'י ל-ER</option>
+    </options>
+    <explanation>
+      <correct>כשרמת הכולסטרול גבוהה, SCAP חש את הכולסטרול ומחזיק את SREBP מעוגן בממברנת ה-ER. כשהכולסטרול נמוך, SCAP מלווה את SREBP לגולג'י, שם פרוטאזות מבקעות אותו ומשחררות את הדומיין השעתוקי שמפעיל גנים לסינתזת כולסטרול — לולאת משוב.</correct>
+      <distractor option="b">בנוכחות כולסטרול SREBP מוחזק ב-ER, לא בגולג'י.</distractor>
+      <distractor option="c">הביקוע מתבצע בגולג'י בהיעדר כולסטרול, לא ע"י SCAP בנוכחות כולסטרול.</distractor>
+      <distractor option="d">המעבר הוא מ-ER לגולג'י (בהיעדר כולסטרול), לא להפך.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.87 (Alberts Fig 12-10)"/>
+    <tags><tag>signaling</tag><tag>lipid-metabolism</tag></tags>
+  </question>
+
+  <question id="cb23-010" difficulty="intermediate" type="single-choice">
+    <stem>מולקולה הידרופילית קטנה (משקל מולקולרי כ-4000 דלתון) מוזרקת לציטוזול. לאן היא תגיע בדיפוזיה פשוטה?</stem>
+    <terms>
+      <term he="נקבובית גרעין" en="nuclear pore complex (NPC)"/>
+      <term he="דיפוזיה" en="diffusion"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">לגרעין (דרך נקבוביות הגרעין)</option>
+      <option id="b" correct="false">למטריקס של המיטוכונדריה</option>
+      <option id="c" correct="false">תישאר בציטוזול בלבד</option>
+      <option id="d" correct="false">תיכנס לליזוזומים</option>
+    </options>
+    <explanation>
+      <correct>נקבובית הגרעין (NPC) מאפשרת מעבר חופשי בדיפוזיה למולקולות מסיסות-מים קטנות — בקירוב עד ~5000 דלתון; מעל ~60,000 דלתון נדרש שינוע פעיל. מולקולה הידרופילית של 4000 דלתון קטנה מספיק כדי לדפז בחופשיות אל הגרעין.</correct>
+      <distractor option="b">כניסה למטריקס המיטוכונדריאלי דורשת מנגנוני שינוע ייעודיים (TOM/TIM), לא דיפוזיה פשוטה.</distractor>
+      <distractor option="c">המולקולה קטנה דיה לעבור דרך ה-NPC, ולכן לא תישאר רק בציטוזול.</distractor>
+      <distractor option="d">כניסה לליזוזום אינה מתרחשת בדיפוזיה פשוטה מהציטוזול.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.88 (Alberts עמ' 650)"/>
+    <tags><tag>nuclear-transport</tag><tag>diffusion</tag></tags>
+  </question>
+
+  <question id="cb23-011" difficulty="intermediate" type="single-choice">
+    <stem>כיצד פועל החלבון c-Cbl (cCBl) במסלול האיתות של קולטני טירוזין קינאז?</stem>
+    <terms>
+      <term he="קולטן טירוזין קינאז" en="receptor tyrosine kinase (RTK)"/>
+      <term he="דומיין SH2" en="SH2 domain"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">נקשר ל-RTK פעיל דרך דומיין SH2</option>
+      <option id="b" correct="false">מפרק את ה-RTK ישירות ללא יוביקוויטינציה</option>
+      <option id="c" correct="false">מעכב אנדוציטוזה של הקולטן</option>
+      <option id="d" correct="false">מבצע פעילות פוספטאז על טירוזין של ה-RTK</option>
+    </options>
+    <explanation>
+      <correct>c-Cbl נקשר לטירוזינים המזורחנים של RTK פעיל דרך דומיין SH2. הוא משמש יוביקוויטין-ליגאז שמסמן את הקולטן ביוביקוויטין, מקדם אנדוציטוזה ופירוק בליזוזום — משוב שלילי שמדכא את האיתות.</correct>
+      <distractor option="b">c-Cbl אינו מפרק ישירות; הוא מסמן ביוביקוויטין לפירוק ליזוזומלי.</distractor>
+      <distractor option="c">הוא דווקא מקדם אנדוציטוזה של הקולטן, לא מעכב אותה.</distractor>
+      <distractor option="d">c-Cbl אינו פוספטאז; הקישור שלו תלוי בטירוזין מזורחן דרך SH2.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביולוגיה של התא ש.89 (Alberts עמ' 853)"/>
+    <tags><tag>signaling</tag><tag>RTK</tag></tags>
+  </question>
+
+</questionset>

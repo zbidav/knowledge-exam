@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RECALL deck: questions reconstructed from the מועד א' March 2023 exam
+  (Prev_exams/2023A.pdf). Each question's correct answer was cross-checked
+  against the textbook (Lehninger page refs appear in the source PDF). Contested
+  or ambiguous items from the recall doc were intentionally omitted.
+-->
+<questionset subject="biochemistry" topic="שחזור מועד א' 2023" textbook="Lehninger" chapter="">
+
+  <question id="bc23-001" difficulty="basic" type="single-choice">
+    <stem>באיזו מולקולה לא ניתן להשתמש כבופר (buffer)?</stem>
+    <terms>
+      <term he="בופר" en="buffer"/>
+      <term he="בסיס חזק" en="strong base"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">חומצת האמינו גליצין (Glycine)</option>
+      <option id="b" correct="true">נתרן הידרוקסידי / סודה קאוסטית (NaOH)</option>
+      <option id="c" correct="false">פירובאט (Pyruvate)</option>
+      <option id="d" correct="false">אוקסלואצטאט (Oxaloacetate)</option>
+    </options>
+    <explanation>
+      <correct>בופר מורכב מחומצה חלשה ובסיס המצומד לה, וממתן שינויי pH סביב ה-pKa שלו. NaOH הוא בסיס חזק המתפרק לחלוטין במים — אין לו זוג חומצה/בסיס מצומד בטווח רלוונטי ולכן אינו יכול לשמש כבופר.</correct>
+      <distractor option="a">לגליצין יש קבוצות מתפרקות (קרבוקסיל ואמינו) עם pKa מוגדרים — היא משמשת בופר בתחומים אלה.</distractor>
+      <distractor option="c">לפירובאט קבוצה קרבוקסילית חלשה (pKa≈2.5) — מערכת חומצה/בסיס חלשה שיכולה לחוץ.</distractor>
+      <distractor option="d">לאוקסלואצטאט שתי קבוצות קרבוקסיליות חלשות — יכול לתפקד כבופר.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.1 (Lehninger עמ' 64)"/>
+    <tags><tag>acid-base</tag><tag>buffers</tag></tags>
+  </question>
+
+  <question id="bc23-002" difficulty="intermediate" type="single-choice">
+    <stem>בנקודה האיזואלקטרית (pI) של חלבון, מה נכון לגבי המטען החשמלי שלו?</stem>
+    <terms>
+      <term he="נקודה איזואלקטרית" en="isoelectric point (pI)"/>
+      <term he="מטען כולל" en="net charge"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">המטען הכולל חיובי</option>
+      <option id="b" correct="false">המטען הכולל שלילי</option>
+      <option id="c" correct="true">המטען הכולל אפס (החלבון ניטרלי)</option>
+      <option id="d" correct="false">רוב השיירים בחלבון הם קוטביים אך לא טעונים</option>
+    </options>
+    <explanation>
+      <correct>הנקודה האיזואלקטרית מוגדרת כ-pH שבו המטען החשמלי הכולל של החלבון הוא אפס — מספר המטענים החיוביים שווה למספר השליליים. בנקודה זו החלבון אינו נודד בשדה חשמלי ומסיסותו מינימלית.</correct>
+      <distractor option="a">ב-pH נמוך מ-pI החלבון טעון חיובי, אך לא בנקודת ה-pI עצמה.</distractor>
+      <distractor option="b">ב-pH גבוה מ-pI החלבון טעון שלילי, אך לא בנקודת ה-pI עצמה.</distractor>
+      <distractor option="d">קוטביות השיירים אינה הגדרת ה-pI; ההגדרה היא איזון המטענים לכלל אפס.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.2"/>
+    <tags><tag>charge</tag><tag>isoelectric-point</tag></tags>
+  </question>
+
+  <question id="bc23-003" difficulty="intermediate" type="single-choice">
+    <stem>מה נכון לגבי מצב המעבר (transition state) בתגובה אנזימטית?</stem>
+    <terms>
+      <term he="מצב מעבר" en="transition state"/>
+      <term he="אנרגיית שפעול" en="activation energy"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">לא נוצרים בו קשרים חדשים בין האנזים לסובסטרט</option>
+      <option id="b" correct="false">הוא מייצג את רמת המינימום של אנרגיית השפעול</option>
+      <option id="c" correct="false">עוברים בו אלקטרונים מהסובסטרט לתוצר</option>
+      <option id="d" correct="true">בנקודה זו הסיכוי שהסובסטרט ימשיך לתוצר שווה לסיכוי שיחזור להיות מגיב</option>
+    </options>
+    <explanation>
+      <correct>מצב המעבר הוא נקודת השיא האנרגטית במסלול התגובה (לא ביניים יציב). בו ההסתברות שהמערכת תתקדם אל התוצר שווה להסתברות שתתפרק חזרה אל המגיבים — זו "נקודת ההכרעה" שבראש מחסום האנרגיה.</correct>
+      <distractor option="a">דווקא במצב המעבר האנזים מתייצב מול הסובסטרט וקשרים נשברים/נוצרים — זהו בסיס הקטליזה.</distractor>
+      <distractor option="b">מצב המעבר הוא שיא (מקסימום) האנרגיה, לא מינימום; אנרגיית השפעול היא ההפרש בין מצב היסוד למצב המעבר.</distractor>
+      <distractor option="c">מצב המעבר אינו מוגדר כהעברת אלקטרונים אלא כמבנה החולף בראש מחסום האנרגיה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.3 (Lehninger עמ' 193)"/>
+    <tags><tag>enzyme-kinetics</tag><tag>catalysis</tag></tags>
+  </question>
+
+  <question id="bc23-004" difficulty="intermediate" type="single-choice">
+    <stem>על פי הנחת המצב היציב (steady state) של מיכאליס-מנטן, מה נכון לאורך החלק הנמדד של התגובה?</stem>
+    <terms>
+      <term he="מצב יציב" en="steady state"/>
+      <term he="קומפלקס אנזים-סובסטרט" en="enzyme-substrate complex (ES)"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">ריכוז האנזים החופשי E וריכוז הסובסטרט S קבועים</option>
+      <option id="b" correct="true">ריכוז הקומפלקס ES נשאר קבוע בקירוב</option>
+      <option id="c" correct="false">ריכוז הקומפלקס EP נשאר קבוע</option>
+      <option id="d" correct="false">ריכוז האנזים E קבוע אך ריכוז הסובסטרט S עולה</option>
+    </options>
+    <explanation>
+      <correct>הנחת המצב היציב (Briggs-Haldane) קובעת שקצב היווצרות קומפלקס ES שווה לקצב פירוקו, כך שריכוז ES נשאר קבוע בקירוב לאורך התקופה הנמדדת. על בסיס זה נגזרת משוואת מיכאליס-מנטן.</correct>
+      <distractor option="a">ריכוז הסובסטרט S יורד עם הזמן (הוא נצרך), ולכן אינו קבוע.</distractor>
+      <distractor option="c">ההנחה מתייחסת ל-ES; EP אינו האובייקט שעליו מבוססת הגזירה.</distractor>
+      <distractor option="d">ריכוז הסובסטרט יורד ולא עולה במהלך התגובה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.4 (Lehninger עמ' 202)"/>
+    <tags><tag>enzyme-kinetics</tag><tag>michaelis-menten</tag></tags>
+  </question>
+
+  <question id="bc23-005" difficulty="basic" type="single-choice">
+    <stem>איזו מולקולה מקשרת בין מעגל קרבס (citric acid cycle) למעגל האוריאה (urea cycle)?</stem>
+    <terms>
+      <term he="מעגל קרבס" en="citric acid cycle"/>
+      <term he="מעגל האוריאה" en="urea cycle"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">ציטרולין (Citrulline)</option>
+      <option id="b" correct="false">אלפא-קטוגלוטרט (α-Ketoglutarate)</option>
+      <option id="c" correct="true">אספרטט (Aspartate)</option>
+      <option id="d" correct="false">מאלאט (Malate)</option>
+    </options>
+    <explanation>
+      <correct>אספרטט מספק את אטום החנקן השני לאוריאה (דרך יצירת ארגינינוסוקצינאט). ה-aspartate–argininosuccinate shunt מקשר בין שני המעגלים: שלד הפחמן של אספרטט חוזר כפומראט אל מעגל קרבס.</correct>
+      <distractor option="a">ציטרולין הוא ביניים בתוך מעגל האוריאה עצמו, לא מולקולת הקישור בין שני המעגלים.</distractor>
+      <distractor option="b">α-קטוגלוטרט הוא ביניים במעגל קרבס; הוא מקבל חנקן בטרנסאמינציה אך אינו מולקולת הקישור הישירה למעגל האוריאה.</distractor>
+      <distractor option="d">מאלאט הוא ביניים במעגל קרבס ובמעבורת מאלאט-אספרטט, אך הקישור הישיר לאוריאה נעשה דרך אספרטט.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.6 (Lehninger עמ' 707)"/>
+    <tags><tag>metabolism</tag><tag>urea-cycle</tag></tags>
+  </question>
+
+  <question id="bc23-006" difficulty="intermediate" type="single-choice">
+    <stem>מה נכון בנוגע לחומצות אמינו גלוקוגניות (glucogenic)?</stem>
+    <terms>
+      <term he="גלוקוגני" en="glucogenic"/>
+      <term he="גלוקונאוגנזה" en="gluconeogenesis"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">שלד הפחמן שלהן יכול לשמש לאנבוליזם (בנייה) של גלוקוז</option>
+      <option id="b" correct="false">תוצרי הפירוק שלהן משמשים לקטבוליזם של גליקוגן</option>
+      <option id="c" correct="false">מתוצריהן עושים חומצות שומן בלבד</option>
+      <option id="d" correct="false">התוצרים שלהן מעכבים את מעגל קרבס</option>
+    </options>
+    <explanation>
+      <correct>חומצות אמינו גלוקוגניות מתפרקות לפירובאט או לביניים של מעגל קרבס (למשל α-קטוגלוטרט, סוקציניל-CoA, פומראט, אוקסלואצטאט), שמהם ניתן לסנתז גלוקוז בגלוקונאוגנזה.</correct>
+      <distractor option="b">פירוקן מזין גלוקונאוגנזה, לא קטבוליזם של גליקוגן (פירוק גליקוגן הוא גליקוגנוליזה, מסלול נפרד).</distractor>
+      <distractor option="c">חומצות אמינו קטוגניות (לא גלוקוגניות) מובילות לאצטיל-CoA/גופי קטו; הגלוקוגניות מובילות לגלוקוז.</distractor>
+      <distractor option="d">הביניים שנוצרים מזינים את מעגל קרבס (אנפלרוטיים), לא מעכבים אותו.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.7"/>
+    <tags><tag>metabolism</tag><tag>amino-acid-catabolism</tag></tags>
+  </question>
+
+  <question id="bc23-007" difficulty="intermediate" type="single-choice">
+    <stem>אילו חומצות אמינו משמשות בעיקר להובלת עודפי חנקן מהרקמות אל הכבד?</stem>
+    <terms>
+      <term he="הובלת חנקן" en="nitrogen transport"/>
+      <term he="הסרת רעילות אמוניה" en="ammonia detoxification"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">אספרטט וגלוטמין</option>
+      <option id="b" correct="false">היסטדין וגלוטמין</option>
+      <option id="c" correct="true">גלוטמין ואלנין</option>
+      <option id="d" correct="false">היסטדין ואספרגין</option>
+    </options>
+    <explanation>
+      <correct>גלוטמין מסיע חנקן מרוב הרקמות אל הכבד והכליה, ואלנין מסיע חנקן בעיקר מהשריר אל הכבד (מעגל גלוקוז-אלנין). שתיהן צורות הובלה לא-רעילות של אמוניה.</correct>
+      <distractor option="a">אספרטט תורם חנקן בתוך הכבד (מעגל האוריאה) אך אינו נשא ההובלה המרכזי ברקמות.</distractor>
+      <distractor option="b">היסטדין אינו נשא חנקן מרכזי בין רקמות.</distractor>
+      <distractor option="d">היסטדין ואספרגין אינם נשאי ההובלה העיקריים של חנקן לכבד.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.8 (Lehninger עמ' 623)"/>
+    <tags><tag>metabolism</tag><tag>nitrogen-transport</tag></tags>
+  </question>
+
+  <question id="bc23-008" difficulty="advanced" type="single-choice">
+    <stem>בתגובת טרנסאמינציה, באיזה שלב נוצר בסיס שיף (Schiff base / aldimine)?</stem>
+    <terms>
+      <term he="בסיס שיף" en="Schiff base"/>
+      <term he="פירידוקסל פוספט" en="pyridoxal phosphate (PLP)"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">בקישור קבוצת האמינו של חומצת האמינו לפירידוקסל פוספט (PLP) באתר הפעיל</option>
+      <option id="b" correct="false">בהוצאת NH3+ ישירות מגלוטמט</option>
+      <option id="c" correct="false">בקישור תיאמין פירופוספט (TPP) לסובסטרט</option>
+      <option id="d" correct="false">ביצירת קרבמואיל פוספט</option>
+    </options>
+    <explanation>
+      <correct>בטרנסאמינציה הקבוצה האמינית של חומצת האמינו תוקפת את אלדהיד ה-PLP ויוצרת בסיס שיף (aldimine) באתר הפעיל. דרך ביניים זה מועברת קבוצת האמינו ל-α-קטוגלוטרט ונוצר גלוטמט.</correct>
+      <distractor option="b">הוצאת NH3+ מגלוטמט היא דה-אמינציה חמצונית (גלוטמט דהידרוגנאז) — שלב נפרד, לא יצירת בסיס שיף.</distractor>
+      <distractor option="c">TPP הוא קו-אנזים של דקרבוקסילציות (למשל פירובאט דהידרוגנאז), לא של יצירת בסיס שיף בטרנסאמינציה.</distractor>
+      <distractor option="d">קרבמואיל פוספט שייך למעגל האוריאה, לא לשלב בסיס השיף בטרנסאמינציה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.9 (Lehninger עמ' 699-700)"/>
+    <tags><tag>metabolism</tag><tag>transamination</tag><tag>PLP</tag></tags>
+  </question>
+
+  <question id="bc23-009" difficulty="basic" type="single-choice">
+    <stem>מה נכון לגבי תערובת רצמית (racemic mixture) של שני אננטיומרים?</stem>
+    <terms>
+      <term he="תערובת רצמית" en="racemic mixture"/>
+      <term he="אור מקוטב" en="plane-polarized light"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">היא מסיטה את מישור האור המקוטב לכיוון אחד</option>
+      <option id="b" correct="true">היא מכילה ריכוז שווה של שני האננטיומרים ואינה מסיטה את מישור האור</option>
+      <option id="c" correct="false">אחד האננטיומרים נמצא בעודף משמעותי</option>
+      <option id="d" correct="false">תרכובת ללא מרכז כירלי מסובבת את מישור האור</option>
+    </options>
+    <explanation>
+      <correct>תערובת רצמית מכילה כמויות שוות (1:1) של שני האננטיומרים. כל אננטיומר מסובב את מישור האור המקוטב בכיוון מנוגד ובאותה מידה, ולכן הסיבובים מתבטלים והתערובת אינה פעילה אופטית.</correct>
+      <distractor option="a">תרכובת טהורה של אננטיומר יחיד מסיטה לכיוון אחד; תערובת רצמית — לא.</distractor>
+      <distractor option="c">בתערובת רצמית היחס הוא 1:1, ללא עודף.</distractor>
+      <distractor option="d">תרכובת חסרת מרכז כירלי אינה מסובבת כלל את מישור האור.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.10 (Lehninger עמ' 17)"/>
+    <tags><tag>stereochemistry</tag><tag>chirality</tag></tags>
+  </question>
+
+  <question id="bc23-010" difficulty="advanced" type="single-choice">
+    <stem>מה גורם לכדוריות הדם האדומות במחלת אנמיה חרמשית (sickle cell) להתחרמש?</stem>
+    <terms>
+      <term he="אנמיה חרמשית" en="sickle cell anemia"/>
+      <term he="המוגלובין" en="hemoglobin"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">יותר מ-2% מההמוגלובין מסוג A2</option>
+      <option id="b" correct="false">חוסר ב-BPG (2,3-bisphosphoglycerate)</option>
+      <option id="c" correct="true">כאשר המוגלובין S נמצא במצב T (משוחרר חמצן) הוא חושף משטח הידרופובי ועובר אגרגציה לסיבים</option>
+      <option id="d" correct="false">פחות מ-2% מההמוגלובין מסוג A2</option>
+    </options>
+    <explanation>
+      <correct>בהמוגלובין S (תחלופת Glu→Val) נחשף משטח הידרופובי דביק. במצב המוקסי (T-state, לאחר שחרור החמצן) מולקולות HbS נצמדות זו לזו ויוצרות סיבים ארוכים, המעוותים את הכדורית לצורת חרמש.</correct>
+      <distractor option="a">המוגלובין A2 קיים בכמות קטנה גם בבריאים ואינו הגורם להתחרמשות.</distractor>
+      <distractor option="b">BPG מווסת זיקת חמצן אך אינו הגורם הישיר להתחרמשות; הפולימריזציה היא של HbS עצמו.</distractor>
+      <distractor option="d">רמת A2 אינה הגורם להתחרמשות; הגורם הוא פולימריזציה של HbS במצב T.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.11 (Lehninger עמ' 172-173)"/>
+    <tags><tag>hemoglobin</tag><tag>protein-structure</tag></tags>
+  </question>
+
+  <question id="bc23-011" difficulty="basic" type="single-choice">
+    <stem>מהו הגורם המדבק (infectious agent) במחלת הפרה המשוגעת (mad cow disease)?</stem>
+    <terms>
+      <term he="פריון" en="prion"/>
+      <term he="קיפול שגוי" en="misfolding"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">חלבון פריון (PrP) הגורם לקיפול פתולוגי של חלבונים תקינים</option>
+      <option id="b" correct="false">וירוס ssRNA המקודד לחלבון פריוני</option>
+      <option id="c" correct="false">וירוס dsRNA המשנה מבנה חלבונים</option>
+      <option id="d" correct="false">הגן Creutzfeldt-Jakob המעכב קיפול חלבונים</option>
+    </options>
+    <explanation>
+      <correct>הגורם הוא חלבון פריון (PrP) בצורתו הפתולוגית (PrPSc). הוא נטול חומצות גרעין ופועל בכך שהוא מקדם שינוי קונפורמציה של חלבון PrP תקין לצורה הפתולוגית — תגובת שרשרת של קיפול שגוי.</correct>
+      <distractor option="b">פריון אינו וירוס ואינו מכיל RNA — זו בדיוק התכונה החריגה שלו.</distractor>
+      <distractor option="c">אין מעורבות של dsRNA; הגורם הוא חלבון בלבד.</distractor>
+      <distractor option="d">Creutzfeldt-Jakob היא מחלה פריונית בבני אדם, לא גן מעכב.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.12 (Lehninger Box 4-6)"/>
+    <tags><tag>protein-folding</tag><tag>prions</tag></tags>
+  </question>
+
+  <question id="bc23-012" difficulty="intermediate" type="single-choice">
+    <stem>כיצד משפיע SDS (sodium dodecyl sulfate) על חלבונים בהרצה בג'ל אלקטרופורזה?</stem>
+    <terms>
+      <term he="אלקטרופורזה" en="electrophoresis"/>
+      <term he="דנטורציה" en="denaturation"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">גורם להם להיות מקופלים (folded) לחלוטין</option>
+      <option id="b" correct="true">פורם אותם ומעניק מטען שלילי אחיד, כך שהם נודדים לפי גודלם</option>
+      <option id="c" correct="false">צובע את החלבונים בכחול ולא את הג'ל</option>
+      <option id="d" correct="false">מסמן את החלבונים כך שניתן יהיה לראותם ב-UV</option>
+    </options>
+    <explanation>
+      <correct>SDS הוא דטרגנט שמפרק (denatures) את החלבון וקושר אותו ביחס קבוע למסה, ומעניק לו מטען שלילי אחיד. כך מבנה ומטען עצמי מתבטלים, וההפרדה בג'ל נקבעת כמעט אך ורק לפי גודל (מסה מולקולרית).</correct>
+      <distractor option="a">SDS דווקא פורם (unfolds) את החלבונים, לא משאיר אותם מקופלים.</distractor>
+      <distractor option="c">SDS אינו צבע; הצביעה נעשית בשלב נפרד (למשל Coomassie).</distractor>
+      <distractor option="d">SDS אינו תג פלואורסצנטי ל-UV; תפקידו פירוק והענקת מטען.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.13"/>
+    <tags><tag>methods</tag><tag>electrophoresis</tag></tags>
+  </question>
+
+  <question id="bc23-013" difficulty="basic" type="single-choice">
+    <stem>איזה קומפלקס בשרשרת הובלת האלקטרונים (electron transport chain) אינו שואב פרוטונים אל המרחב הבין-קרומי?</stem>
+    <terms>
+      <term he="שרשרת הובלת אלקטרונים" en="electron transport chain"/>
+      <term he="סוקצינאט דהידרוגנאז" en="succinate dehydrogenase"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">קומפלקס II — סוקצינאט דהידרוגנאז</option>
+      <option id="b" correct="false">קומפלקס III</option>
+      <option id="c" correct="false">קומפלקס I</option>
+      <option id="d" correct="false">קומפלקס IV — ציטוכרום c אוקסידאז</option>
+    </options>
+    <explanation>
+      <correct>קומפלקס II (סוקצינאט דהידרוגנאז) מעביר אלקטרונים מ-FADH2 ל-קואנזים Q אך אינו משאבת פרוטונים — האנרגיה המשתחררת בו אינה מספיקה. קומפלקסים I, III ו-IV הם שאבי הפרוטונים שיוצרים את המפל האלקטרוכימי.</correct>
+      <distractor option="b">קומפלקס III (cytochrome bc1) שואב פרוטונים דרך מחזור Q.</distractor>
+      <distractor option="c">קומפלקס I (NADH dehydrogenase) שואב פרוטונים.</distractor>
+      <distractor option="d">קומפלקס IV שואב פרוטונים תוך חיזור חמצן למים.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, ביוכימיה ש.15"/>
+    <tags><tag>bioenergetics</tag><tag>oxidative-phosphorylation</tag></tags>
+  </question>
+
+</questionset>

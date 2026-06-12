@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Seed / template question file.
+  - One topic per file: content/<subject>/<topic>.xml
+  - subject MUST match a folder/key in src/data/subjects.js
+  - Each <question> needs: stem, 4 options (ids a-d, exactly one correct="true"),
+    an <explanation> with <correct> + one <distractor> per wrong option, a
+    <source>, and optionally <terms> (Hebrew<->English bridge) and <tags>.
+  Copy this structure to author new topics.
+-->
+<questionset subject="biochemistry" topic="חומצות אמינו" textbook="Lehninger" chapter="פרק 3">
+
+  <question id="aa-001" difficulty="basic" type="single-choice">
+    <stem>איזו מבין חומצות האמינו הבאות היא היחידה שאינה כירלית (achiral), כלומר חסרת פחמן α א-סימטרי?</stem>
+    <terms>
+      <term he="כירליות" en="chirality"/>
+      <term he="פחמן אלפא" en="alpha carbon"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">אלנין (Alanine)</option>
+      <option id="b" correct="true">גליצין (Glycine)</option>
+      <option id="c" correct="false">סרין (Serine)</option>
+      <option id="d" correct="false">ולין (Valine)</option>
+    </options>
+    <explanation>
+      <correct>בגליצין שרשרת הצד היא אטום מימן בודד (H), כך שלפחמן ה-α קשורות שתי קבוצות מימן זהות. לכן הפחמן אינו א-סימטרי ואין לו צורות אננטיומריות D/L — גליצין היא חומצת האמינו היחידה שכך.</correct>
+      <distractor option="a">לאלנין שרשרת צד מתיל (CH₃), כך שלפחמן ה-α ארבעה מתמירים שונים — היא כירלית.</distractor>
+      <distractor option="c">לסרין שרשרת צד עם הידרוקסיל (-CH₂OH), ארבעה מתמירים שונים — כירלית.</distractor>
+      <distractor option="d">לולין שרשרת צד מסועפת (isopropyl) — כירלית.</distractor>
+    </explanation>
+    <source type="generated" basis="Lehninger ch.3 — amino acid structure"/>
+    <tags><tag>structure</tag><tag>stereochemistry</tag></tags>
+  </question>
+
+  <question id="aa-002" difficulty="basic" type="single-choice">
+    <stem>איזו חומצת אמינו נושאת קבוצת תיול (-SH) ויכולה ליצור קשר דו-גופרתי (disulfide bond) בחלבונים?</stem>
+    <terms>
+      <term he="תיול" en="thiol / sulfhydryl"/>
+      <term he="קשר דו-גופרתי" en="disulfide bond"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">מתיונין (Methionine)</option>
+      <option id="b" correct="false">סרין (Serine)</option>
+      <option id="c" correct="true">ציסטאין (Cysteine)</option>
+      <option id="d" correct="false">תראונין (Threonine)</option>
+    </options>
+    <explanation>
+      <correct>לציסטאין שרשרת צד עם קבוצת תיול (-CH₂-SH). שני שיירי ציסטאין יכולים להתחמצן ולקשור קשר דו-גופרתי (cystine), המייצב את המבנה השלישוני של חלבונים.</correct>
+      <distractor option="a">מתיונין אמנם מכילה גופרית, אך זו קבוצת תיו-אתר (S-CH₃) ולא תיול חופשי — אינה יוצרת קשר דו-גופרתי.</distractor>
+      <distractor option="b">לסרין הידרוקסיל (-OH) ולא תיול.</distractor>
+      <distractor option="d">לתראונין הידרוקסיל (-OH) ולא תיול.</distractor>
+    </explanation>
+    <source type="generated" basis="Lehninger ch.3 — side-chain chemistry"/>
+    <tags><tag>structure</tag><tag>covalent-bonds</tag></tags>
+  </question>
+
+  <question id="aa-003" difficulty="intermediate" type="single-choice">
+    <stem>ב-pH פיזיולוגי (≈7.4), לאיזו מבין חומצות האמינו הבאות שרשרת צד הטעונה במטען חיובי?</stem>
+    <terms>
+      <term he="מטען חיובי" en="positive charge"/>
+      <term he="pH פיזיולוגי" en="physiological pH"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">אספרטט (Aspartate)</option>
+      <option id="b" correct="false">גלוטמט (Glutamate)</option>
+      <option id="c" correct="true">ליזין (Lysine)</option>
+      <option id="d" correct="false">פנילאלנין (Phenylalanine)</option>
+    </options>
+    <explanation>
+      <correct>לליזין שרשרת צד עם קבוצת אמינו (ε-amino) שה-pKa שלה ≈10.5. ב-pH 7.4 היא מפרוטנת (-NH₃⁺) ולכן טעונה חיובית. ליזין, ארגינין והיסטידין הן חומצות האמינו הבסיסיות.</correct>
+      <distractor option="a">לאספרטט שרשרת צד קרבוקסילית (pKa≈3.9), ב-pH פיזיולוגי היא דה-פרוטנת וטעונה שלילית.</distractor>
+      <distractor option="b">לגלוטמט שרשרת צד קרבוקסילית — טעונה שלילית ב-pH פיזיולוגי.</distractor>
+      <distractor option="d">לפנילאלנין שרשרת צד ארומטית לא-קוטבית וחסרת מטען.</distractor>
+    </explanation>
+    <source type="generated" basis="Lehninger ch.3 — acid-base properties"/>
+    <tags><tag>charge</tag><tag>pKa</tag></tags>
+  </question>
+
+  <question id="aa-004" difficulty="intermediate" type="single-choice">
+    <stem>ספיגת האור של חלבונים באורך גל 280 ננומטר מנוצלת למדידת ריכוז חלבון. איזו חומצת אמינו תורמת בעיקר לספיגה זו?</stem>
+    <terms>
+      <term he="ספיגת אור" en="absorbance"/>
+      <term he="טבעת ארומטית" en="aromatic ring"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">לאוצין (Leucine)</option>
+      <option id="b" correct="true">טריפטופן (Tryptophan)</option>
+      <option id="c" correct="false">גליצין (Glycine)</option>
+      <option id="d" correct="false">אלנין (Alanine)</option>
+    </options>
+    <explanation>
+      <correct>לטריפטופן (ובמידה פחותה לטירוזין) טבעת ארומטית עתירת אלקטרונים הסופגת אור UV סביב 280 ננומטר. זו הבסיס למדידת ריכוז חלבון לפי A₂₈₀.</correct>
+      <distractor option="a">ללאוצין שרשרת צד אליפטית לא-קוטבית, ללא טבעת ארומטית — אינה סופגת ב-280 ננומטר.</distractor>
+      <distractor option="c">לגליצין שרשרת הצד היא אטום מימן בלבד — אין ספיגה ב-UV.</distractor>
+      <distractor option="d">לאלנין שרשרת מתיל פשוטה — אין טבעת ארומטית ואין ספיגה משמעותית.</distractor>
+    </explanation>
+    <source type="generated" basis="Lehninger ch.3 — spectroscopic properties"/>
+    <tags><tag>aromatic</tag><tag>spectroscopy</tag></tags>
+  </question>
+
+  <question id="aa-005" difficulty="advanced" type="single-choice">
+    <stem>מדוע שייר פרולין (Proline) נוטה לשבש סלילי α (α-helix) ולעיתים קרובות נמצא בפיתולים (turns) של חלבון?</stem>
+    <terms>
+      <term he="סליל אלפא" en="alpha helix"/>
+      <term he="חומצת אימינו" en="imino acid"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">משום ששרשרת הצד שלו טעונה חיובית ודוחה שיירים סמוכים</option>
+      <option id="b" correct="true">משום שאטום החנקן שלו הוא חלק מטבעת קשיחה, ולכן חסר מימן זמין לקשר מימן בשלד וכושר הסיבוב סביב קשר N-Cα מוגבל</option>
+      <option id="c" correct="false">משום שהוא חומצת האמינו הגדולה ביותר ונוצרת הפרעה מרחבית</option>
+      <option id="d" correct="false">משום ששרשרת הצד שלו יוצרת קשרים דו-גופרתיים המייצבים מבנה אחר</option>
+    </options>
+    <explanation>
+      <correct>בפרולין אטום החנקן של השלד סגור בתוך טבעת בת חמישה אטומים (לכן הוא "חומצת אימינו"). כתוצאה מכך אין לו אטום מימן על ה-N לתרום לקשר מימן המייצב את הסליל, והסיבוב סביב קשר N–Cα (זווית φ) נעול. שני אלה מונעים השתלבות בסליל α ודוחפים לפיתולים.</correct>
+      <distractor option="a">שרשרת הצד של פרולין אינה טעונה — היא אליפטית; הסיבה אינה מטען.</distractor>
+      <distractor option="c">פרולין אינו חומצת האמינו הגדולה ביותר (טריפטופן גדולה יותר), והסיבה אינה גודל אלא קשיחות הטבעת.</distractor>
+      <distractor option="d">לפרולין אין תיול ואינו יוצר קשרים דו-גופרתיים — זו תכונה של ציסטאין.</distractor>
+    </explanation>
+    <source type="generated" basis="Lehninger ch.4 — secondary structure / proline"/>
+    <tags><tag>secondary-structure</tag><tag>proline</tag></tags>
+  </question>
+
+</questionset>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RECALL deck: molecular-biology questions from the מועד א' March 2023 exam
+  (Prev_exams/2023A.pdf, ש.51-60). Answers cross-checked against Alberts /
+  Lehninger. Ambiguous items from the recall doc were omitted.
+-->
+<questionset subject="molecular-biology" topic="שחזור מועד א' 2023" textbook="Alberts" chapter="">
+
+  <question id="mb23-001" difficulty="intermediate" type="single-choice">
+    <stem>מה נכון לגבי כרומוזומים פוליטניים (polytene) שנמצאים ברוק של זבוב הדרוזופילה?</stem>
+    <terms>
+      <term he="כרומוזום פוליטני" en="polytene chromosome"/>
+      <term he="בנדים" en="bands"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">הדנ"א מסודר באופן אקראי ומקבילי</option>
+      <option id="b" correct="false">באזורים שבין הבנדים (interbands) הדנ"א דחוס יותר</option>
+      <option id="c" correct="true">מרבית הדנ"א (כ-95%) נמצא בתוך הבנדים</option>
+      <option id="d" correct="false">אורך המקטעים שבין הבנדים זהה</option>
+    </options>
+    <explanation>
+      <correct>בכרומוזום פוליטני הדנ"א דחוס בעיקר בבנדים הכהים — כ-95% מה-DNA נמצא בהם, ושם ריכוז הכרומטין גבוה. ה-interbands הם אזורי כרומטין רפוי ופחות דחוס.</correct>
+      <distractor option="a">הבנדים יוצרים תבנית מסודרת וחוזרת, לא אקראית — לכן משתמשים בהם כמפה ציטוגנטית.</distractor>
+      <distractor option="b">ה-interbands דווקא פחות דחוסים (כרומטין פתוח), לא יותר.</distractor>
+      <distractor option="d">אורכי המקטעים בין הבנדים אינם זהים — התבנית משתנה לאורך הכרומוזום.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.51 (Alberts עמ' 210, Fig 4-51)"/>
+    <tags><tag>chromatin</tag><tag>chromosome-structure</tag></tags>
+  </question>
+
+  <question id="mb23-002" difficulty="advanced" type="single-choice">
+    <stem>חלבוני PIWI פועלים יחד עם piRNA. כיצד piRNA פוגע במטרה שלו?</stem>
+    <terms>
+      <term he="הפרעת RNA" en="RNA interference"/>
+      <term he="צימוד בסיסים" en="base pairing"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">נקשר ל-RNA ומפרק אותו על ידי דה-אמינציה</option>
+      <option id="b" correct="true">נקשר ל-RNA המטרה בצימוד בסיסים ומעכב/מפרק אותו</option>
+      <option id="c" correct="false">נקשר ל-DNA ומעכב שעתוק</option>
+      <option id="d" correct="false">נקשר ל-mRNA ומגדיל את יציבותו</option>
+    </options>
+    <explanation>
+      <correct>piRNA (piwi-interacting RNA) משמש כמדריך: הוא מזהה תעתיקים של אלמנטים ניידים (transposons) בצימוד בסיסים משלים, וכך מכוון את חלבון PIWI להשתיק/לפרק את ה-RNA המטרה ולהגן על שורת הנבט.</correct>
+      <distractor option="a">המנגנון הוא צימוד בסיסים והשתקה, לא דה-אמינציה.</distractor>
+      <distractor option="c">piRNA פועל בעיקר על תעתיקי RNA (וגם ברמת כרומטין), אך התשובה כאן מתמקדת בקישור ל-RNA בצימוד בסיסים.</distractor>
+      <distractor option="d">המערכת מדכאת ומפרקת את המטרה, לא מייצבת אותה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.52 (Alberts — piRNAs)"/>
+    <tags><tag>RNA-interference</tag><tag>piRNA</tag></tags>
+  </question>
+
+  <question id="mb23-003" difficulty="intermediate" type="single-choice">
+    <stem>היכן ממוקם החלבון shelterin?</stem>
+    <terms>
+      <term he="שלטרין" en="shelterin"/>
+      <term he="טלומר" en="telomere"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">בקצה המולקולה (בטלומרים)</option>
+      <option id="b" correct="false">בקשור לקצה המיקרוטובולי</option>
+      <option id="c" correct="false">לאורך כל הכרומטין</option>
+      <option id="d" correct="false">בבסיס לולאת הכרומוזום</option>
+    </options>
+    <explanation>
+      <correct>shelterin הוא קומפלקס חלבונים שנקשר לקצות הכרומוזומים (הטלומרים), "מסתיר" אותם מגלאי הנזק של התא ומסייע ליצירת מבנה ה-t-loop המגן.</correct>
+      <distractor option="b">shelterin אינו קשור למיקרוטובולים אלא לקצה ה-DNA הטלומרי.</distractor>
+      <distractor option="c">הוא ממוקד בקצוות בלבד, לא לאורך כל הכרומטין.</distractor>
+      <distractor option="d">תפקידו בקצה הטלומרי, לא בבסיס לולאה כרומוזומלית כללית.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.53 (Alberts עמ' 263)"/>
+    <tags><tag>telomere</tag><tag>chromosome-ends</tag></tags>
+  </question>
+
+  <question id="mb23-004" difficulty="advanced" type="single-choice">
+    <stem>קצב שעתוק של גן בן 3000 בסיסים הוא 50 בסיסים לשנייה. כמה מולקולות mRNA יכולות להתקבל מהגן בתוך שעה?</stem>
+    <terms>
+      <term he="שעתוק" en="transcription"/>
+      <term he="RNA פולימראז" en="RNA polymerase"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">60 מולקולות בדיוק</option>
+      <option id="b" correct="true">יותר מ-60 מולקולות, כי מספר פולימראזות משעתקות את הגן במקביל</option>
+      <option id="c" correct="false">פחות מ-60, בגלל אירועי שחבור (splicing)</option>
+      <option id="d" correct="false">פחות מ-60, בגלל הוספת CAP ו-Poly-A</option>
+    </options>
+    <explanation>
+      <correct>חישוב נאיבי נותן 60 שניות לתעתיק אחד (3000/50) ולכן 60 לשעה — אך ה-RNA משתחרר מהפולימראז כמעט מיד, כך שפולימראזות נוספות מתחילות לשעתק לפני שהקודמת סיימה. כך נוצרים הרבה יותר מ-60 תעתיקים מאותו גן בשעה.</correct>
+      <distractor option="a">החישוב של 60 מתעלם מכך שכמה פולימראזות פועלות על אותו גן במקביל.</distractor>
+      <distractor option="c">שחבור אינו מגביל את מספר התעתיקים שנוצרים מהגן.</distractor>
+      <distractor option="d">עיבוד הקצוות אינו מקטין את מספר התעתיקים הנוצרים בשעה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.54 (Alberts עמ' 304, Fig 6-10)"/>
+    <tags><tag>transcription</tag><tag>kinetics</tag></tags>
+  </question>
+
+  <question id="mb23-005" difficulty="intermediate" type="single-choice">
+    <stem>למולקולת mRNA יש זנב Poly-A קצר מאוד (כ-25 בסיסים). מה לא צפוי לקרות לה?</stem>
+    <terms>
+      <term he="זנב פולי-A" en="poly-A tail"/>
+      <term he="פירוק mRNA" en="mRNA decay"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">פירוק על ידי אקסונוקלאזות מקצה 3'</option>
+      <option id="b" correct="false">הסרת ה-Cap בקצה 5'</option>
+      <option id="c" correct="false">פירוק על ידי אנדונוקלאזות</option>
+      <option id="d" correct="true">תרגום יעיל בריבוזום</option>
+    </options>
+    <explanation>
+      <correct>זנב Poly-A קצר מסמן את התעתיק לפירוק (deadenylation מובילה להסרת Cap ולפירוק מהיר). לכן דווקא תרגום יעיל בריבוזום הוא מה שלא יקרה — התעתיק מנותב לפירוק ולא לתרגום.</correct>
+      <distractor option="a">קיצור Poly-A מאיץ פירוק 3'→5' על ידי אקסונוקלאזות — זה כן יקרה.</distractor>
+      <distractor option="b">deadenylation מובילה ל-decapping בקצה 5' — זה כן יקרה.</distractor>
+      <distractor option="c">פירוק אנדונוקלאוטי פנימי הוא מסלול אפשרי נוסף — כן יכול לקרות.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.55 (Alberts Fig 7-69)"/>
+    <tags><tag>mRNA-stability</tag><tag>translation</tag></tags>
+  </question>
+
+  <question id="mb23-006" difficulty="advanced" type="single-choice">
+    <stem>איזה אירוע כרומוזומלי יכול להוביל לכך שגנים שבדרך כלל מתבטאים רק בתאי לב לא יתבטאו שם, אלא בכבד?</stem>
+    <terms>
+      <term he="אפיגנטיקה" en="epigenetics"/>
+      <term he="מתילציה" en="DNA methylation"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">מתילציה של DNA (DNA methylation)</option>
+      <option id="b" correct="false">רקומבינציה הומולוגית (homologous recombination)</option>
+      <option id="c" correct="false">היפוך (inversion)</option>
+      <option id="d" correct="false">הצמדת כרומטידות אחיות (sister chromatid cohesion)</option>
+    </options>
+    <explanation>
+      <correct>מתילציה של DNA היא סימון אפיגנטי הניתן לתורשה תאית (mitotically heritable) ומשתנה בין רקמות. שינוי בתבנית המתילציה — בלי לשנות את רצף ה-DNA — יכול להשתיק/להפעיל גנים באופן ספציפי לרקמה, ולכן להסביר ביטוי שונה בכבד מול לב.</correct>
+      <distractor option="b">רקומבינציה הומולוגית משנה רצף DNA ואינה המנגנון לבקרת ביטוי ספציפית-רקמה.</distractor>
+      <distractor option="c">היפוך הוא שינוי מבני ברצף ה-DNA, לא סימון אפיגנטי הפיך וספציפי לרקמה.</distractor>
+      <distractor option="d">קוהזיה של כרומטידות נוגעת להפרדת כרומוזומים במיטוזה, לא לבקרת ביטוי גנים ברקמה.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.57"/>
+    <tags><tag>epigenetics</tag><tag>gene-regulation</tag></tags>
+  </question>
+
+  <question id="mb23-007" difficulty="basic" type="single-choice">
+    <stem>ממה מורכב מבנה ה-Holliday Junction?</stem>
+    <terms>
+      <term he="צומת הולידיי" en="Holliday Junction"/>
+      <term he="רקומבינציה" en="recombination"/>
+    </terms>
+    <options>
+      <option id="a" correct="true">DNA</option>
+      <option id="b" correct="false">ליפידים</option>
+      <option id="c" correct="false">מיטוכונדריה</option>
+      <option id="d" correct="false">תאים</option>
+    </options>
+    <explanation>
+      <correct>Holliday Junction הוא מבנה ביניים ברקומבינציה הומולוגית שבו ארבעה גדילי DNA משני כרומוזומים הומולוגיים מצטלבים. זהו מבנה DNA בלבד.</correct>
+      <distractor option="b">אין מעורבות של ליפידים — זהו צומת של גדילי DNA.</distractor>
+      <distractor option="c">המבנה אינו קשור למיטוכונדריה.</distractor>
+      <distractor option="d">זהו מבנה מולקולרי בתוך התא, לא מבנה של תאים.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.58 (Alberts ch.5)"/>
+    <tags><tag>recombination</tag><tag>DNA-repair</tag></tags>
+  </question>
+
+  <question id="mb23-008" difficulty="intermediate" type="single-choice">
+    <stem>איזה בסיס (נוקלאוטיד) ב-DNA אינו עובר דה-אמינציה (deamination)?</stem>
+    <terms>
+      <term he="דה-אמינציה" en="deamination"/>
+      <term he="תימין" en="thymine"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">A (אדנין)</option>
+      <option id="b" correct="false">C (ציטוזין)</option>
+      <option id="c" correct="false">G (גואנין)</option>
+      <option id="d" correct="true">T (תימין)</option>
+    </options>
+    <explanation>
+      <correct>דה-אמינציה דורשת קבוצת אמינו (-NH2) על הבסיס. לתימין אין קבוצת אמינו אקסוציקלית (יש לו קבוצות קטו ומתיל), ולכן הוא אינו עובר דה-אמינציה. אדנין, ציטוזין וגואנין נושאים קבוצת אמינו ויכולים לעבור דה-אמינציה (C→U, A→היפוקסנטין, G→קסנתין).</correct>
+      <distractor option="a">לאדנין קבוצת אמינו — הוא עובר דה-אמינציה להיפוקסנטין.</distractor>
+      <distractor option="b">לציטוזין קבוצת אמינו — דה-אמינציה הופכת אותו לאורציל.</distractor>
+      <distractor option="c">לגואנין קבוצת אמינו — דה-אמינציה הופכת אותו לקסנתין.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.59"/>
+    <tags><tag>DNA-damage</tag><tag>mutation</tag></tags>
+  </question>
+
+  <question id="mb23-009" difficulty="advanced" type="single-choice">
+    <stem>איזו מודיפיקציה של נוקלאוטיד חיונית לשיטת ריצוף סנגר (Sanger sequencing)?</stem>
+    <terms>
+      <term he="ריצוף סנגר" en="Sanger sequencing"/>
+      <term he="דידאוקסי-נוקלאוטיד" en="dideoxynucleotide (ddNTP)"/>
+    </terms>
+    <options>
+      <option id="a" correct="false">הוספת OH על פחמן 3'</option>
+      <option id="b" correct="false">הסרת OH מפחמן 2'</option>
+      <option id="c" correct="false">הוספת OH על פחמן s</option>
+      <option id="d" correct="true">הסרת OH מפחמן 3'</option>
+    </options>
+    <explanation>
+      <correct>שיטת סנגר משתמשת ב-ddNTPs — נוקלאוטידים שחסר בהם ההידרוקסיל בפחמן 3' (3'-OH). ללא 3'-OH לא ניתן ליצור קשר פוספודיאסטר לנוקלאוטיד הבא, ולכן שרשרת ה-DNA נעצרת (chain termination) באתר ההכללה.</correct>
+      <distractor option="a">דווקא הסרת ה-3'-OH (ולא הוספתו) היא שעוצרת את ההארכה.</distractor>
+      <distractor option="b">פחמן 2' כבר חסר OH ב-DNA רגיל; ההבדל הקריטי הוא בפחמן 3'.</distractor>
+      <distractor option="c">אין "פחמן s" בריבוז; השינוי הרלוונטי הוא בפחמן 3'.</distractor>
+    </explanation>
+    <source type="recall" basis="מועד א' 2023, מולקולרית ש.60"/>
+    <tags><tag>methods</tag><tag>sequencing</tag></tags>
+  </question>
+
+</questionset>
