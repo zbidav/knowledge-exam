@@ -69,6 +69,17 @@ export function freeAminoAcidCharge(aa, pH) {
   return basicCharge(N_TERM_PKA, pH) + acidicCharge(C_TERM_PKA, pH) + sideChainCharge(aa, pH)
 }
 
+// Charge of a residue WITHIN a peptide. Only the first residue carries the free
+// α-amino group and only the last carries the free α-carboxyl; internal residues
+// have both locked in peptide bonds, so ONLY their side chain counts. (A single
+// residue, isFirst && isLast, reduces to the free amino acid.)
+export function peptideResidueCharge(aa, pH, isFirst, isLast) {
+  let q = sideChainCharge(aa, pH)
+  if (isFirst) q += basicCharge(N_TERM_PKA, pH)
+  if (isLast) q += acidicCharge(C_TERM_PKA, pH)
+  return q
+}
+
 // Net charge of the residues treated as ONE peptide chain: every side chain plus
 // a single free N-terminus (+) and C-terminus (−). For a single residue this
 // equals the net charge of the free amino acid.

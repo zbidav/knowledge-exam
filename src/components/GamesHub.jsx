@@ -15,8 +15,8 @@ const BUILTIN_GAMES = [
   {
     id: 'builtin-aa-abbrev',
     subject: 'biochemistry',
-    title: 'קודים של חומצות אמינו',
-    sub: 'זיהוי קוד 1/3 אותיות לשם המלא',
+    title: 'תרגול חומצות אמינו',
+    sub: 'זיהוי קודים + חידון מטעני פפטיד',
     icon: '🔤',
     Component: AminoAcidAbbrevGame,
   },

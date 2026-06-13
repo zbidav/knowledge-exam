@@ -135,16 +135,19 @@ export default function AminoAcidChargeLab({ onExit }) {
       {/* palette, grouped by family */}
       <div className="palette-zone">
         <div className="order-zone-label">לוח חומצות אמינו (לחיצה מוסיפה לפפטיד)</div>
-        {FAMILIES.map((fam) => (
-          <div className="aa-family" key={fam.key}>
-            <div className="aa-family-label">{fam.he}</div>
-            <div className="aa-tile-row palette" dir="ltr">
-              {AMINO_ACIDS.filter((a) => a.family === fam.key).map((aa) => (
-                <Tile key={aa.one} aa={aa} q={tileCharge(aa)} onClick={() => add(aa)} />
-              ))}
+        {/* family groups laid out 2 on top, 3 below (6-col grid; top spans 3, bottom spans 2) */}
+        <div className="aa-family-grid">
+          {FAMILIES.map((fam, i) => (
+            <div className="aa-family" key={fam.key} style={{ gridColumn: i < 2 ? 'span 3' : 'span 2' }}>
+              <div className="aa-family-label">{fam.he}</div>
+              <div className="aa-tile-row palette" dir="ltr">
+                {AMINO_ACIDS.filter((a) => a.family === fam.key).map((aa) => (
+                  <Tile key={aa.one} aa={aa} q={tileCharge(aa)} onClick={() => add(aa)} />
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
         <div className="charge-legend">
           <span><span className="dot dot-pos" /> חיובי</span>
           <span><span className="dot dot-neg" /> שלילי</span>
