@@ -172,13 +172,20 @@ body {
 .aa-tile-row.palette .aa-tile { cursor: pointer; }
 .aa-tile {
   position: relative; display: flex; flex-direction: column; align-items: center;
-  justify-content: center; gap: 0; width: 56px; height: 60px;
+  justify-content: center; gap: 1px; width: 58px; min-height: 66px;
   border: 1.5px solid var(--line); border-radius: 10px; cursor: pointer;
-  color: var(--ink);
+  color: var(--ink); padding: 4px 2px;
 }
-.aa-tile-three { font-size: 0.65rem; color: var(--muted); direction: ltr; }
-.aa-tile-one { font-size: 1.5rem; font-weight: 800; line-height: 1; direction: ltr; }
-.aa-tile-charge { position: absolute; top: 2px; inset-inline-end: 5px; font-size: 0.75rem; font-weight: 700; }
+.aa-tile-three { font-size: 0.62rem; color: var(--muted); direction: ltr; }
+.aa-tile-one { font-size: 1.45rem; font-weight: 800; line-height: 1; direction: ltr; }
+.aa-tile-charge { font-size: 0.72rem; font-weight: 700; direction: ltr; }
+
+/* charge-mode toggle + family grouping */
+.charge-mode { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.mode-hint { font-size: 0.85rem; color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin-bottom: 14px; }
+.aa-family { margin-bottom: 10px; }
+.aa-family-label { font-size: 0.8rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
+.chain-row { justify-content: flex-start; }
 .aa-tile-removable:hover { outline: 2px solid var(--wrong); }
 .charge-legend { display: flex; gap: 16px; color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
 .charge-legend .dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-inline-end: 4px; vertical-align: middle; }
